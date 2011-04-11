@@ -1,0 +1,82 @@
+local shamanMacros = {
+  ["Heroism"] = "/cast Heroism\n/cast Bloodlust",
+  ["Call of the Elements"] = "#showtooltip Call of the Elements\n/cast Call of the Elements",
+  ["Call of the Spirits"] = "#showtooltip Call of the Spirits\n/cast Call of the Spirits",
+  ["Call of the Ancestors"] = "#showtooltip Call of the Ancestors\n/cast Call of the Ancestors",
+  ["Healing Rain"] = "#showtooltip Healing Rain\n/cast !Healing Rain",
+  ["EM LB"] = "#showtooltip Elemental Mastery\n/cast Elemental Mastery\n/cast Lava Burst",
+  -- Used in Resto only
+  ["NS GHW"] = "#showtooltip Nature's Swiftness\n/cast Nature's Swiftness\n/cast Greater Healing Wave",
+}
+
+local shamanBindings = {
+  ["`"] = "SPELL Mana Spring Totem",
+  ["1"] = "SPELL Lightning Bolt",
+  ["2"] = "SPELL Chain Lightning",
+  ["3"] = "SPELL Flame Shock",
+  ["5"] = "SPELL Earth Shock",
+  ["6"] = "SPELL Earth Elemental Totem",
+  ["="] = "SPELL Windfury Weapon",
+  ["C"] = "SPELL Greater Healing Wave",
+  ["E"] = "SPELL Wind Shear",
+  ["F"] = "SPELL Hex",
+  ["H"] = "MACRO Healing Rain",
+  ["T"] = "SPELL Ghost Wolf",
+  ["V"] = "SPELL Healing Surge",
+  ["X"] = "SPELL Healing Wave",
+  ["Z"] = "SPELL Frost Shock",
+  ["CTRL-4"] = "SPELL Magma Totem",
+  ["CTRL-A"] = "SPELL Healing Stream Totem",
+  ["CTRL-C"] = "SPELL Far Sight",
+  ["CTRL-E"] = "MACRO Call of the Ancestors",
+  ["CTRL-F"] = "SPELL Chain Heal",
+  ["CTRL-G"] = "SPELL Flametongue Weapon",
+  ["CTRL-Q"] = "MACRO Call of the Elements",
+  ["CTRL-R"] = "SPELL Water Shield",
+  ["CTRL-S"] = "SPELL Bind Elemental",
+  ["CTRL-T"] = "SPELL Totemic Recall",
+  ["CTRL-W"] = "SPELL Totem of Tranquil Mind",
+  ["CTRL-X"] = "SPELL Water Breathing",
+  ["SHIFT-1"] = "SPELL Water Walking",
+  ["SHIFT-2"] = "SPELL Cleanse Spirit",
+  ["SHIFT-4"] = "SPELL Fire Nova",
+  ["SHIFT-5"] = "SPELL Stoneskin Totem",
+  ["SHIFT-A"] = "MACRO Call of the Spirits",
+  ["SHIFT-C"] = "SPELL Grounding Totem",
+  ["SHIFT-D"] = "SPELL Unleash Elements",
+  ["SHIFT-E"] = "SPELL Purge",
+  ["SHIFT-F"] = "SPELL Earthbind Totem",
+  ["SHIFT-G"] = "SPELL Earthliving Weapon",
+  ["SHIFT-H"] = "SPELL Elemental Resistance Totem",
+  ["SHIFT-L"] = "SPELL Ancestral Spirit",
+  ["SHIFT-Q"] = "MACRO Heroism",
+  ["SHIFT-S"] = "SPELL Searing Totem",
+  ["SHIFT-T"] = "SPELL Lightning Shield",
+  ["SHIFT-V"] = "SPELL Spiritwalker's Grace",
+  ["SHIFT-X"] = "SPELL Tremor Totem",
+  ["SHIFT-Z"] = "SPELL Stoneclaw Totem",
+}
+
+local shamanElementalBindings = {
+  ["4"] = "SPELL Lava Burst",
+  ["Q"] = "SPELL Thunderstorm",
+  ["R"] = "MACRO EM LB",
+  ["SHIFT-3"] = "SPELL Elemental Mastery",
+  ["SHIFT-R"] = "SPELL Earthquake",
+}
+
+local shamanEnhancementBindings = {
+  ["4"] = "SPELL Feral Spirit",
+  ["Q"] = "SPELL Stormstrike",
+  ["R"] = "SPELL Lava Lash",
+  ["SHIFT-3"] = "SPELL Primal Strike",
+  ["SHIFT-R"] = "SPELL Shamanistic Rage",
+}
+
+local shamanRestorationBindings = {
+  ["4"] = "SPELL Lava Burst",
+  ["Q"] = "SPELL Earth Shield",
+  ["R"] = "SPELL Riptide",
+  ["SHIFT-3"] = "SPELL Mana Tide Totem",
+  ["SHIFT-R"] = "MACRO NS GHW",
+}

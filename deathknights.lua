@@ -4,7 +4,7 @@ local deathKnightMacros = {
   ["Death and Decay"] = "#showtooltip Death and Decay\n/cast !Death and Decay",
   ["Horn of Winter"] = "#showtooltip Horn of Winter\n/cancelaura Horn of Winter\n/cancelaura Battle Shout\n/cast Horn of Winter",
   -- Used in Unholy only
-  ["Scourge Strike"] = "#showtooltip Scourge Strike\n/startattack\n/cast [target=pettarget,nodead,harm][] Claw\n/cast Scourge Strike",
+  ["Scourge Strike"] = "#showtooltip Scourge Strike\n/startattack\n/cast [@pettarget,nodead,harm][] Claw\n/cast Scourge Strike",
 }
 
 local deathKnightBindings = {

@@ -1,70 +1,77 @@
-local deathKnightMacros = {
+local _, Binder = ...
+
+local m1 = Binder.m1 -- 'CTRL-'
+local m1 = Binder.m1 -- 'SHIFT-'
+
+Binder.deathknight = {}
+
+Binder.deathknight["macros"] = {
   ["Death Pact"] = "#showtooltip Death Pact\n/cast [nopet] Raise Dead\n/cast [pet, @pet] Death Pact",
   ["Gnaw"] = "#showtooltip Gnaw\n/cast Leap\n/cast Gnaw",
   ["Death and Decay"] = "#showtooltip Death and Decay\n/cast !Death and Decay",
   ["Horn of Winter"] = "#showtooltip Horn of Winter\n/cancelaura Horn of Winter\n/cancelaura Battle Shout\n/cast Horn of Winter",
-  -- Used in Unholy only
   ["Scourge Strike"] = "#showtooltip Scourge Strike\n/startattack\n/cast [@pettarget,nodead,harm][] Claw\n/cast Scourge Strike",
 }
 
-local deathKnightBindings = {
-  ["1"] = "SPELL Festering Strike",
-  ["4"] = "SPELL Death Coil",
-  ["6"] = "SPELL Dark Command",
-  ["C"] = "SPELL Death Grip",
-  ["E"] = "SPELL Mind Freeze",
-  ["F"] = "SPELL Strangulate",
-  ["H"] = "SPELL Army of the Dead",
-  ["Q"] = "SPELL Blood Tap",
-  ["R"] = "SPELL Death Strike",
-  ["T"] = "SPELL Lichborne",
-  ["V"] = "MACRO Death Pact",
-  ["X"] = "SPELL Obliterate",
-  ["Z"] = "SPELL Chains of Ice",
-  ["CTRL-4"] = "SPELL Pestilence",
-  ["CTRL-C"] = "SPELL Death Gate",
-  ["CTRL-E"] = "SPELL Blood Presence",
-  ["CTRL-F"] = "SPELL Blood Boil",
-  ["CTRL-G"] = "SPELL Unholy Presence",
-  ["CTRL-Q"] = "SPELL Frost Presence",
-  ["CTRL-W"] = "SPELL Raise Ally",
-  ["CTRL-X"] = "SPELL Raise Dead",
-  ["SHIFT-1"] = "SPELL Path of Frost",
-  ["SHIFT-4"] = "MACRO Death and Decay",
-  ["SHIFT-A"] = "MACRO Horn of Winter",
-  ["SHIFT-C"] = "SPELL Anti-Magic Shell",
-  ["SHIFT-D"] = "SPELL Icy Touch",
-  ["SHIFT-F"] = "SPELL Plague Strike",
-  ["SHIFT-Q"] = "SPELL Empower Rune Weapon",
-  ["SHIFT-R"] = "SPELL Rune Strike",
-  ["SHIFT-S"] = "SPELL Outbreak",
-  ["SHIFT-V"] = "SPELL Necrotic Strike",
-  ["SHIFT-X"] = "SPELL Dark Simulacrum",
-  ["SHIFT-Z"] = "SPELL Icebound Fortitude",
+Binder.deathknight["keybinds"] = {
+  deathknight = {
+    ["Festering Strike"]    = { key = "1" },
+    ["Death Coil"]          = { key = "4" },
+    ["Dark Command"]        = { key = "6" },
+    ["Death Grip"]          = { key = "C" },
+    ["Mind Freeze"]         = { key = "E" },
+    ["Strangulate"]         = { key = "F" },
+    ["Army of the Dead"]    = { key = "H" },
+    ["Blood Tap"]           = { key = "Q" },
+    ["Death Strike"]        = { key = "R" },
+    ["Lichborne"]           = { key = "T" },
+    ["Death Pact"]          = { key = "V" },
+    ["Obliterate"]          = { key = "X" },
+    ["Chains of Ice"]       = { key = "Z" },
+    ["Pestilence"]          = { key = m1.."4" },
+    ["Death Gate"]          = { key = m1.."C" },
+    ["Blood Presence"]      = { key = m1.."E" },
+    ["Blood Boil"]          = { key = m1.."F" },
+    ["Unholy Presence"]     = { key = m1.."G" },
+    ["Frost Presence"]      = { key = m1.."Q" },
+    ["Raise Ally"]          = { key = m1.."W" },
+    ["Raise Dead"]          = { key = m1.."X" },
+    ["Path of Frost"]       = { key = m1.."1" },
+    ["Death and Decay"]     = { key = m1.."4" },
+    ["Horn of Winter"]      = { key = m1.."A" },
+    ["Anti-Magic Shell"]    = { key = m1.."C" },
+    ["Icy Touch"]           = { key = m1.."D" },
+    ["Plague Strike"]       = { key = m1.."F" },
+    ["Empower Rune Weapon"] = { key = m1.."Q" },
+    ["Rune Strike"]         = { key = m1.."R" },
+    ["Outbreak"]            = { key = m1.."S" },
+    ["Necrotic Strike"]     = { key = m1.."V" },
+    ["Dark Simulacrum"]     = { key = m1.."X" },
+    ["Icebound Fortitude"]  = { key = m1.."Z" },
+  },
 }
 
-local deathKnightBloodBindings = {
-  ["2"] = "SPELL Heart Strike",
-  ["3"] = "SPELL Dancing Rune Weapon",
-  ["SHIFT-2"] = "SPELL Bone Shield",
-  -- ["SHIFT-3"] = "SPELL",
-  ["SHIFT-E"] = "SPELL Rune Tap",
+Binder.deathknight["blood_keybinds"] = {
+  ["Heart Strike"]        = { key = "2" },
+  ["Dancing Rune Weapon"] = { key = "3" },
+  ["Bone Shield"]         = { key = m1.."2" },
+  ["Rune Tap"]            = { key = m1.."E" },
 }
 
-local deathKnightFrostBindings = {
-  ["2"] = "SPELL Blood Strike",
-  ["3"] = "SPELL Pillar of Frost",
-  ["SHIFT-2"] = "SPELL Howling Blast",
-  ["SHIFT-3"] = "SPELL Hungering Cold",
-  ["SHIFT-E"] = "SPELL Frost Strike",
+Binder.deathknight["frost_keybinds"] = {
+  ["Blood Strike"]    = { key = "2" },
+  ["Pillar of Frost"] = { key = "3" },
+  ["Howling Blast"]   = { key = m1.."2" },
+  ["Hungering Cold"]  = { key = m1.."3" },
+  ["Frost Strike"]    = { key = m1.."E" },
 }
 
-local deathKnightUnholyBindings = {
-  ["`"] = "MACRO Gnaw",
-  ["2"] = "SPELL Blood Strike",
-  ["3"] = "SPELL Unholy Frenzy",
-  ["CTRL-R"] = "SPELL Anti-Magic Zone",
-  ["SHIFT-2"] = "SPELL Dark Transformation",
-  ["SHIFT-3"] = "SPELL Summon Gargoyle",
-  ["SHIFT-E"] = "MACRO Scourge Strike",
+Binder.deathknight["unholy_keybinds"] = {
+  ["Gnaw"]                = { key = "`" },
+  ["Blood Strike"]        = { key = "2" },
+  ["Unholy Frenzy"]       = { key = "3" },
+  ["Anti-Magic Zone"]     = { key = m1.."R" },
+  ["Dark Transformation"] = { key = m1.."2" },
+  ["Summon Gargoyle"]     = { key = m1.."3" },
+  ["Scourge Strike"]      = { key = m1.."E" },
 }

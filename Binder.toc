@@ -3,4 +3,14 @@
 ## Version 0.0.1
 ## Author: Drenos @ EU-Darkmoon Faire
 Binder.lua
+DeathKnight.lua
 Druid.lua
+Global.lua
+Hunter.lua
+Mage.lua
+Paladin.lua
+Priest.lua
+Rogue.lua
+Shaman.lua
+Warlock.lua
+Warrior.lua

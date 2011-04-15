@@ -20,6 +20,10 @@ Binder.druid["macros"] = {
   ["Wild Mushroom"]      = "#showtooltip Wild Mushroom\n/cast !Wild Mushroom",
   ["Force of Nature"]    = "#showtooltip Force of Nature\n/cast !Force of Nature",
   ["Nature's Swiftness"] = "#showtooltip Nature's Swiftness\n/cast Nature's Swiftness\n/cast Healing Touch"
+
+  -- Mouseover macros
+  ["Lifebloom"] = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Lifebloom",
+  ["Rejuvenation"] = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Rejuvenation",
 }
 
 Binder.druid["keybinds"] = {

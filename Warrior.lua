@@ -23,6 +23,14 @@ Binder.warrior["macros"] = {
   ["Taunt"]              = "#showtooltip Taunt\n/startattack\n/cast [stance:2] Taunt; [stance:1/3] Defensive Stance",
   ["Pummel"]             = "#showtooltip Pummel\n/cast [stance:1/2,equipped:shields] Shield Bash;[stance:2,noequipped:shields] Battle Stance\n/cast [stance:1/3] Pummel",
   ["Retaliation"]        = "#showtooltip Retaliation\n/cast [stance:1] Retaliation; [stance:2/3] Battle Stance",
+  --
+  ["Raging Blow"]        = "#showtooltip Raging Blow\n/startattack\n/cast [stance:3] Raging Blow; [stance:1/2] Berserker Stance",
+  ["Intervene"]          = "#showtooltip Intervene\n/cast [stance:2] Intervene; [stance:1/3] Defensive Stance",
+  ["Charge"]             = "#showtooltip Charge\n/startattack\n/cast [stance:1] Charge; [stance:2/3] Battle Stance",
+  ["Intercept"]          = "#showtooltip Intercept\n/startattack\n/cast [stance:3] Intercept; [stance:1/2] Berserker Stance",
+  ["Heroic Leap"]        = "#showtooltip Heroic Leap\n/cast !Heroic Leap",
+  ["Throwdown"]          = "#showtooltip Throwdown\n/cast [stance:1] Throwdown; [stance:2/3] Battle Stance",
+  ["Sweeping Strikes"]   = "#showtooltip Sweeping Strikes\n/cast [stance:1/3] Sweeping Strikes; [stance:2] Battle Stance",
 }
 
 Binder.warrior["keybinds"] = {

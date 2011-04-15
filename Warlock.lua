@@ -1,96 +1,101 @@
-local warlockMacros = {
-  ["Singe Magic"] = "#showtooltip Singe Magic\n/cast [pet,@target] Singe Magic; [nopet] Summon Imp"
-  ["Devour Magic"] = "#showtooltip Devour Magic\n/cast [pet,@target] Devour Magic; [nopet] Summon Felhunter"
-  ["Spell Lock"] = "#showtooltip Spell Lock\n/cast [pet,@target] Spell Lock; [nopet] Summon Felhunter"
-  ["Rain of Fire"] = "#showtooltip Rain of Fire\n/cast !Rain of Fire"
-  ["Drain Life"] = "#showtooltip Drain Life\n/cast [nochanneling: Drain Life] Drain Life"
-  ["Health Funnel"] = "#showtooltip Health Funnel\n/cast [nochanneling: Health Funnel] Health Funnel"
-  ["Drain Soul"] = "#showtooltip Drain Soul\n/cast [nochanneling: Drain Soul] Drain Soul"
-  -- Only used in Demonology
-  ["Axe Toss"] = "#showtooltip Axe Toss\n/cast Axe Toss\n/cast Singe Magic"
-  ["Felstorm"] = "#showtooltip Felstorm\n/cast Felstorm\n/cast Devour Magic"
-  ["Metamorphosis"] = "#showtooltip Metamorphosis\n/cast [nostance] Metamorphosis; Immolation Aura"
-  ["Pursuit"] = "#showtooltip Pursuit\n/cast Pursuit\n/cast Spell Lock"
-  ["Demon Leap"] = "#showtooltip Demon Leap\n/cast [nostance] Metamorphosis; Demon Leap"
-  -- Only used in Destruction
-  ["Shadowfury"] = "#showtooltip Shadowfury\n/cast !Shadowfury"
+local _, Binder = ...
+
+local m1 = Binder.m1 -- 'CTRL-'
+local m2 = Binder.m2 -- 'SHIFT-'
+
+Binder.warlock = {}
+
+Binder.warlock["macros"] = {
+  ["Singe Magic"]              = "#showtooltip Singe Magic\n/cast [pet,@target] Singe Magic; [nopet] Summon Imp"
+  ["Devour Magic"]             = "#showtooltip Devour Magic\n/cast [pet,@target] Devour Magic; [nopet] Summon Felhunter"
+  ["Spell Lock"]               = "#showtooltip Spell Lock\n/cast [pet,@target] Spell Lock; [nopet] Summon Felhunter"
+  ["Rain of Fire"]             = "#showtooltip Rain of Fire\n/cast !Rain of Fire"
+  ["Drain Life"]               = "#showtooltip Drain Life\n/cast [nochanneling: Drain Life] Drain Life"
+  ["Health Funnel"]            = "#showtooltip Health Funnel\n/cast [nochanneling: Health Funnel] Health Funnel"
+  ["Drain Soul"]               = "#showtooltip Drain Soul\n/cast [nochanneling: Drain Soul] Drain Soul"
+  ["Axe Toss"]                 = "#showtooltip Axe Toss\n/cast Axe Toss\n/cast Singe Magic"
+  ["Felstorm"]                 = "#showtooltip Felstorm\n/cast Felstorm\n/cast Devour Magic"
+  ["Metamorphosis"]            = "#showtooltip Metamorphosis\n/cast [nostance] Metamorphosis; Immolation Aura"
+  ["Pursuit"]                  = "#showtooltip Pursuit\n/cast Pursuit\n/cast Spell Lock"
+  ["Demon Leap"]               = "#showtooltip Demon Leap\n/cast [nostance] Metamorphosis; Demon Leap"
+  ["Shadowfury"]               = "#showtooltip Shadowfury\n/cast !Shadowfury"
 }
 
-local warlockBindings = {
-  ["1"] = "SPELL Incinerate",
-  ["2"] = "SPELL Shadow Bolt",
-  ["3"] = "SPELL Immolate",
-  ["6"] = "SPELL Searing Pain",
-  ["="] = "SPELL Create Healthstone",
-  ["C"] = "SPELL Curse of the Elements",
-  ["F"] = "SPELL Fear",
-  ["Q"] = "SPELL Life Tap",
-  ["R"] = "SPELL Curse of Weakness",
-  ["T"] = "SPELL Demonic Circle: Teleport",
-  ["V"] = "MACRO Drain Life",
-  ["X"] = "SPELL Curse of Tongues",
-  ["Z"] = "SPELL Shadowflame",
-  ["CTRL-4"] = "MACRO Rain of Fire",
-  ["CTRL-A"] = "SPELL Summon Infernal",
-  ["CTRL-C"] = "SPELL Summon Doomguard",
-  ["CTRL-D"] = "Spell Bane of Doom",
-  ["CTRL-E"] = "SPELL Demon Armor",
-  ["CTRL-F"] = "SPELL Seed of Corruption",
-  ["CTRL-G"] = "SPELL Soul Link",
-  ["CTRL-Q"] = "SPELL Fel Armor",
-  ["CTRL-R"] = "SPELL Soul Harvest",
-  ["CTRL-S"] = "SPELL Banish",
-  ["CTRL-T"] = "SPELL Dark Intent",
-  ["CTRL-W"] = "SPELL Summon Felhunter",
-  ["CTRL-X"] = "SPELL Fel Flame",
-  ["SHIFT-1"] = "SPELL Soul Fire",
-  ["SHIFT-3"] = "SPELL Soulburn",
-  ["SHIFT-4"] = "SPELL Hellfire",
-  ["SHIFT-5"] = "SPELL Summon Imp",
-  ["SHIFT-D"] = "SPELL Bane of Agony",
-  ["SHIFT-F"] = "SPELL Howl of Terror",
-  ["SHIFT-G"] = "SPELL Demonic Circle: Summon",
-  ["SHIFT-H"] = "SPELL Summon Voidwalker",
-  ["SHIFT-Q"] = "SPELL Demon Soul",
-  ["SHIFT-R"] = "MACRO Health Funnel",
-  ["SHIFT-S"] = "SPELL Corruption",
-  ["SHIFT-T"] = "SPELL Summon Succubus",
-  ["SHIFT-V"] = "MACRO Drain Soul",
-  ["SHIFT-X"] = "SPELL Death Coil",
-  ["SHIFT-Z"] = "SPELL Soulshatter",
+Binder.warlock["keybinds"] = {
+  ["Incinerate"]               = { key = "1" },
+  ["Shadow Bolt"]              = { key = "2" },
+  ["Immolate"]                 = { key = "3" },
+  ["Searing Pain"]             = { key = "6" },
+  ["Create Healthstone"]       = { key = "=" },
+  ["Curse of the Elements"]    = { key = "C" },
+  ["Fear"]                     = { key = "F" },
+  ["Life Tap"]                 = { key = "Q" },
+  ["Curse of Weakness"]        = { key = "R" },
+  ["Demonic Circle: Teleport"] = { key = "T" },
+  ["Drain Life"]               = { key = "V" },
+  ["Curse of Tongues"]         = { key = "X" },
+  ["Shadowflame"]              = { key = "Z" },
+  ["Rain of Fire"]             = { key = m1.."4" },
+  ["Summon Infernal"]          = { key = m1.."A" },
+  ["Summon Doomguard"]         = { key = m1.."C" },
+  ["Bane of Doom"]             = { key = m1.."D" },
+  ["Demon Armor"]              = { key = m1.."E" },
+  ["Seed of Corruption"]       = { key = m1.."F" },
+  ["Soul Link"]                = { key = m1.."G" },
+  ["Fel Armor"]                = { key = m1.."Q" },
+  ["Soul Harvest"]             = { key = m1.."R" },
+  ["Banish"]                   = { key = m1.."S" },
+  ["Dark Intent"]              = { key = m1.."T" },
+  ["Summon Felhunter"]         = { key = m1.."W" },
+  ["Fel Flame"]                = { key = m1.."X" },
+  ["Soul Fire"]                = { key = m2.."1" },
+  ["Soulburn"]                 = { key = m2.."3" },
+  ["Hellfire"]                 = { key = m2.."4" },
+  ["Summon Imp"]               = { key = m2.."5" },
+  ["Bane of Agony"]            = { key = m2.."D" },
+  ["Howl of Terror"]           = { key = m2.."F" },
+  ["Demonic Circle: Summon"]   = { key = m2.."G" },
+  ["Summon Voidwalker"]        = { key = m2.."H" },
+  ["Demon Soul"]               = { key = m2.."Q" },
+  ["Health Funnel"]            = { key = m2.."R" },
+  ["Corruption"]               = { key = m2.."S" },
+  ["Summon Succubus"]          = { key = m2.."T" },
+  ["Drain Soul"]               = { key = m2.."V" },
+  ["Death Coil"]               = { key = m2.."X" },
+  ["Soulshatter"]              = { key = m2.."Z" },
 }
 
-local warlockDestructionBindings = {
-  ["`"] = "MACRO Shadowfury",
-  ["4"] = "SPELL Chaos Bolt",
-  ["5"] = "SPELL Conflagrate",
-  ["E"] = "MACRO Spell Lock",
-  ["H"] = "SPELL Shadowburn",
-  ["SHIFT-2"] = "MACRO Singe Magic",
-  ["SHIFT-C"] = "SPELL Nether Ward",
-  ["SHIFT-E"] = "MACRO Devour Magic",
-  ["SHIFT-L"] = "SPELL Bane of Havoc",
+Binder.warlock["destruction_keybinds"] = {
+  ["Shadowfury"]               = { key = "`" },
+  ["Chaos Bolt"]               = { key = "4" },
+  ["Conflagrate"]              = { key = "5" },
+  ["Spell Lock"]               = { key = "E" },
+  ["Shadowburn"]               = { key = "H" },
+  ["Singe Magic"]              = { key = m2.."2" },
+  ["Nether Ward"]              = { key = m2.."C" },
+  ["Devour Magic"]             = { key = m2.."E" },
+  ["Bane of Havoc"]            = { key = m2.."L" },
 }
 
-local warlockDemonologyBindings = {
-  ["`"] = "MACRO Demon Leap",
-  ["4"] = "SPELL Demonic Empowerment",
-  ["5"] = "SPELL Hand of Gul'dan",
-  ["E"] = "MACRO Pursuit",
-  ["H"] = "MACRO Metamorphosis",
-  ["SHIFT-2"] = "MACRO Axe Toss",
-  ["SHIFT-C"] = "SPELL Shadow Ward",
-  ["SHIFT-E"] = "MACRO Felstorm",
-  ["SHIFT-L"] = "SPELL Summon Felguard",
+Binder.warlock["demonology_keybinds"] = {
+  ["Demon Leap"]               = { key = "`" },
+  ["Demonic Empowerment"]      = { key = "4" },
+  ["Hand of Gul'dan"]          = { key = "5" },
+  ["Pursuit"]                  = { key = "E" },
+  ["Metamorphosis"]            = { key = "H" },
+  ["Axe Toss"]                 = { key = m2.."2" },
+  ["Shadow Ward"]              = { key = m2.."C" },
+  ["Felstorm"]                 = { key = m2.."E" },
+  ["Summon Felguard"]          = { key = m2.."L" },
 }
 
-local warlockAfflictionBindings = {
-  ["`"] = "SPELL Soul Swap",
-  ["4"] = "SPELL Haunt",
-  ["5"] = "SPELL Unstable Affliction",
-  ["E"] = "MACRO Spell Lock",
-  ["H"] = "SPELL Curse of Exhaustion",
-  ["SHIFT-2"] = "MACRO Singe Magic",
-  ["SHIFT-C"] = "SPELL Shadow Ward",
-  ["SHIFT-E"] = "MACRO Devour Magic",
+Binder.warlock["affliction_keybinds"] = {
+  ["Soul Swap"]                = { key = "`" },
+  ["Haunt"]                    = { key = "4" },
+  ["Unstable Affliction"]      = { key = "5" },
+  ["Spell Lock"]               = { key = "E" },
+  ["Curse of Exhaustion"]      = { key = "H" },
+  ["Singe Magic"]              = { key = m2.."2" },
+  ["Shadow Ward"]              = { key = m2.."C" },
+  ["Devour Magic"]             = { key = m2.."E" },
 }

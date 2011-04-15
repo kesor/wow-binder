@@ -2,7 +2,13 @@ local _, Binder = ...
 local bframe = "Binder_VirtualMacro"
 
 Binder.macros = {}
-Binder.keybinds = {}
+Binder.macro_keybinds = {}
+Binder.spell_keybinds = {}
+
+-- disabling error messages in macros
+-- works on UiErrors without any code
+SLASH_UI_ERRORS_ON1 = "/erron"
+SLASH_UI_ERRORS_OFF1 = "/erroff"
 
 function Binder:MapMacro(key, name, body)
   local bname = "b" .. string.gsub(name, " ", "_")
@@ -15,12 +21,23 @@ function Binder:MapMacro(key, name, body)
 end
 
 function Binder:LoadBindings()
-  if not self.keybinds then return end
-  for key, macro in pairs(self.keybinds) do
-    if self.macros[macro] then
-      self:MapMacro(key, macro, self.macros[macro])
-    else
-      print("No such macro " .. macro .. " defined!")
+  if self.spell_keybinds then
+    for key, macro in pairs(self.macro_keybinds) do
+
+      if self.macros[macro] then
+        self:MapMacro(key, macro, self.macros[macro])
+      else
+        print("No such macro " .. macro .. " defined!")
+      end
+    end
+  end
+  if self.macro_keybinds then
+    for key, macro in pairs(self.macro_keybinds) do
+      if self.macros[macro] then
+        self:MapMacro(key, macro, self.macros[macro])
+      else
+        print("No such macro " .. macro .. " defined!")
+      end
     end
   end
 end

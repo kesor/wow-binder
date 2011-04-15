@@ -2,7 +2,7 @@
 ## Title: Binder
 ## Version 0.0.1
 ## Author: Drenos @ EU-Darkmoon Faire
-Binder.lua
+Modifier.lua
 DeathKnight.lua
 Druid.lua
 Global.lua
@@ -14,3 +14,4 @@ Rogue.lua
 Shaman.lua
 Warlock.lua
 Warrior.lua
+Binder.lua

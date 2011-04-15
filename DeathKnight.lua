@@ -1,7 +1,7 @@
 local _, Binder = ...
 
 local m1 = Binder.m1 -- 'CTRL-'
-local m2 = Binder.m1 -- 'SHIFT-'
+local m2 = Binder.m2 -- 'SHIFT-'
 
 Binder.deathknight = {}
 

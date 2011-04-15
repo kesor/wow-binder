@@ -6,6 +6,11 @@ local m2 = Binder.m2 -- 'SHIFT-'
 Binder.global = {}
 
 Binder.global["macros"] = {
+  ["PVPTRINKET"]     = "/use 14",
+  ["MOUNT"]          = "/click GoGoMountButton:LeftButton",
+  ["BANDAID"]        = "#showtooltip Dense Embersilk Bandage\n/use [@player] Dense Embersilk Bandage",
+  ["Pet Move"]       = "/petmoveto",
+  ["2h"]             = "/equipslot 16 YOUR 2HER\n/equipslot 17 YOUR 2ND 2HER",
 }
 
 Binder.global["macro_keybinds"] = {

@@ -102,7 +102,7 @@ function Binder:init()
   self.eventframe = CreateFrame("Frame")
   -- self.widget : a button widget that saves the macro bindings on itself
   self.widget = CreateFrame("Button", bframe, UIParent, "SecureActionButtonTemplate")
-  self.eventframe:RegisterEvent("VARIABLES_LOADED")
+  self.eventframe:RegisterEvent("PLAYER_ALIVE")
   self.eventframe:SetScript("OnEvent",
     function(...)
       self:WhoAmI()

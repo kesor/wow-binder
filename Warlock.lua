@@ -6,19 +6,19 @@ local m2 = Binder.m2 -- 'SHIFT-'
 Binder.warlock = {}
 
 Binder.warlock["macros"] = {
-  ["Singe Magic"]              = "#showtooltip Singe Magic\n/cast [pet,@target] Singe Magic; [nopet] Summon Imp"
-  ["Devour Magic"]             = "#showtooltip Devour Magic\n/cast [pet,@target] Devour Magic; [nopet] Summon Felhunter"
-  ["Spell Lock"]               = "#showtooltip Spell Lock\n/cast [pet,@target] Spell Lock; [nopet] Summon Felhunter"
-  ["Rain of Fire"]             = "#showtooltip Rain of Fire\n/cast !Rain of Fire"
-  ["Drain Life"]               = "#showtooltip Drain Life\n/cast [nochanneling: Drain Life] Drain Life"
-  ["Health Funnel"]            = "#showtooltip Health Funnel\n/cast [nochanneling: Health Funnel] Health Funnel"
-  ["Drain Soul"]               = "#showtooltip Drain Soul\n/cast [nochanneling: Drain Soul] Drain Soul"
-  ["Axe Toss"]                 = "#showtooltip Axe Toss\n/cast Axe Toss\n/cast Singe Magic"
-  ["Felstorm"]                 = "#showtooltip Felstorm\n/cast Felstorm\n/cast Devour Magic"
-  ["Metamorphosis"]            = "#showtooltip Metamorphosis\n/cast [nostance] Metamorphosis; Immolation Aura"
-  ["Pursuit"]                  = "#showtooltip Pursuit\n/cast Pursuit\n/cast Spell Lock"
-  ["Demon Leap"]               = "#showtooltip Demon Leap\n/cast [nostance] Metamorphosis; Demon Leap"
-  ["Shadowfury"]               = "#showtooltip Shadowfury\n/cast !Shadowfury"
+  ["Singe Magic"]              = "#showtooltip Singe Magic\n/cast [pet,@target] Singe Magic; [nopet] Summon Imp",
+  ["Devour Magic"]             = "#showtooltip Devour Magic\n/cast [pet,@target] Devour Magic; [nopet] Summon Felhunter",
+  ["Spell Lock"]               = "#showtooltip Spell Lock\n/cast [pet,@target] Spell Lock; [nopet] Summon Felhunter",
+  ["Rain of Fire"]             = "#showtooltip Rain of Fire\n/cast !Rain of Fire",
+  ["Drain Life"]               = "#showtooltip Drain Life\n/cast [nochanneling: Drain Life] Drain Life",
+  ["Health Funnel"]            = "#showtooltip Health Funnel\n/cast [nochanneling: Health Funnel] Health Funnel",
+  ["Drain Soul"]               = "#showtooltip Drain Soul\n/cast [nochanneling: Drain Soul] Drain Soul",
+  ["Axe Toss"]                 = "#showtooltip Axe Toss\n/cast Axe Toss\n/cast Singe Magic",
+  ["Felstorm"]                 = "#showtooltip Felstorm\n/cast Felstorm\n/cast Devour Magic",
+  ["Metamorphosis"]            = "#showtooltip Metamorphosis\n/cast [nostance] Metamorphosis; Immolation Aura",
+  ["Pursuit"]                  = "#showtooltip Pursuit\n/cast Pursuit\n/cast Spell Lock",
+  ["Demon Leap"]               = "#showtooltip Demon Leap\n/cast [nostance] Metamorphosis; Demon Leap",
+  ["Shadowfury"]               = "#showtooltip Shadowfury\n/cast !Shadowfury",
 }
 
 Binder.warlock["keybinds"] = {

@@ -5,11 +5,16 @@ local m2 = Binder.m2 -- 'SHIFT-'
 
 Binder.warrior = {}
 
+local singlehandweapon = "YOUR 1H"
+local twohander1       = "YOUR 1st 2H"
+local twohander2       = "YOUR 2nd 2H"
+local shield           = "YOUR Shield"
+
 Binder.warrior["macros"] = {
   ["Hamstring"]          = "#showtooltip Hamstring\n/cast [stance:1/3] Hamstring; [stance:2] Battle Stance",
-  ["Shield Wall"]        = "#showtooltip Shield Wall\n/cast [stance:2,equipped:shields] Shield Wall; [stance:1/3] Defensive Stance\n/stopmacro [equipped:shields]\n/equip YOUR 1H\n/equip YOUR SHIELD",
-  ["Shield Block"]       = "#showtooltip Shield Block\n/cast [stance:2,equipped:shields] Shield Block; [stance:1/3] Defensive Stance\n/stopmacro [equipped:shields]\n/equip YOUR 1H\n/equip YOUR SHIELD",
-  ["Spell Reflection"]   = "#showtooltip Spell Reflection\n/cast [stance:1/2,equipped:shields] Spell Reflection; [stance:3] Battle Stance\n/stopmacro [equipped:shields]\n/equip YOUR 1H\n/equip YOUR SHIELD",
+  ["Shield Wall"]        = "#showtooltip Shield Wall\n/cast [stance:2,equipped:shields] Shield Wall; [stance:1/3] Defensive Stance\n/stopmacro [equipped:shields]\n/equip "..singlehandweapon.."\n/equip "..shield,
+  ["Shield Block"]       = "#showtooltip Shield Block\n/cast [stance:2,equipped:shields] Shield Block; [stance:1/3] Defensive Stance\n/stopmacro [equipped:shields]\n/equip "..singlehandweapon.."\n/equip "..shield,
+  ["Spell Reflection"]   = "#showtooltip Spell Reflection\n/cast [stance:1/2,equipped:shields] Spell Reflection; [stance:3] Battle Stance\n/stopmacro [equipped:shields]\n/equip "..singlehandweapon.."\n/equip "..shield,
   ["Thunder Clap"]       = "#showtooltip Thunder Clap\n/cast [stance:1/2] Thunder Clap; [stance:3] Battle Stance",
   ["Whirlwind"]          = "#showtooltip Whirlwind\n/startattack\n/cast [stance:3] Whirlwind; [stance:1/2] Berserker Stance",
   ["Enraged Regen"]      = "#showtooltip Enraged Regeneration\n/cast Berserker Rage\n/cast Enraged Regeneration",
@@ -31,6 +36,8 @@ Binder.warrior["macros"] = {
   ["Heroic Leap"]        = "#showtooltip Heroic Leap\n/cast !Heroic Leap",
   ["Throwdown"]          = "#showtooltip Throwdown\n/cast [stance:1] Throwdown; [stance:2/3] Battle Stance",
   ["Sweeping Strikes"]   = "#showtooltip Sweeping Strikes\n/cast [stance:1/3] Sweeping Strikes; [stance:2] Battle Stance",
+  -- weird macro, need to fix it and/or understand how/why it works with the weapons
+  ["2h"]                 = "/equipslot 16 "..twohander1.."\n/equipslot 17 "..twohander2,
 }
 
 Binder.warrior["keybinds"] = {

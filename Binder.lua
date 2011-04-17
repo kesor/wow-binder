@@ -1,4 +1,5 @@
 local _, Binder = ...
+local eframe = "BinderEventFrame"
 local bframe = "Binder_VirtualMacro"
 
 -- disabling error messages in macros
@@ -99,7 +100,7 @@ function Binder:LoadKeys()
 end
 
 function Binder:init()
-  self.eventframe = CreateFrame("Frame")
+  self.eventframe = CreateFrame("Frame", eframe, UIParent)
   -- self.widget : a button widget that saves the macro bindings on itself
   self.widget = CreateFrame("Button", bframe, UIParent, "SecureActionButtonTemplate")
   self.eventframe:RegisterEvent("PLAYER_ALIVE")

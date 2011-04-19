@@ -17,7 +17,6 @@ Binder.global["macro_keybinds"] = {
   ["MOUNT"]          = { key = "Y" },
   ["BANDAID"]        = { key = "J" },
   ["PVPTRINKET"]     = { key = "G" },
-  ["RACIAL"]         = { key = m1.."Z" },
   ["LIVE"]           = { key = m1.."W" },
 }
 
@@ -37,30 +36,27 @@ Binder.racial = {
 }
 
 Binder.global["keybinds"] = {
-  -- Unbind these ...
-  ["NONE"]                     = "SHIFT-UP",
-  ["NONE"]                     = "SHIFT-DOWN",
-  ["NONE"]                     = "SHIFT-MOUSEWHEELUP",
-  ["NONE"]                     = "SHIFT-MOUSEWHEELDOWN",
-  -- Movement
-  ["MOVEFORWARD"]              = "W",
-  ["MOVEBACKWARD"]             = "S",
-  ["STRAFELEFT"]               = "A",
-  ["STRAFERIGHT"]              = "D",
-  ["MOVEFORWARD"]              = "UP",
-  ["MOVEBACKWARD"]             = "DOWN",
-  ["TURNLEFT"]                 = "LEFT",
-  ["TURNRIGHT"]                = "RIGHT",
-  ["JUMP"]                     = "SPACE",
-  ["JUMP"]                     = m1.."SPACE",
-  ["JUMP"]                     = m2.."SPACE",
-  -- Targets
-  ["FOCUSTARGET"]              = "U",
-  --
-  ["OPENALLBAGS"]              = "B",
-  ["CAMERAZOOMIN"]             = "MOUSEWHEELUP",
-  ["CAMERAZOOMOUT"]            = "MOUSEWHEELDOWN",
-  ["TOGGLEAUTORUN"]            = "ALT-CTRL-W",
+  ["SHIFT-UP"]             = "NONE",
+  ["SHIFT-DOWN"]           = "NONE",
+  ["SHIFT-MOUSEWHEELUP"]   = "NONE",
+  ["SHIFT-MOUSEWHEELDOWN"] = "NONE",
+  ["W"]                    = "MOVEFORWARD",
+  ["S"]                    = "MOVEBACKWARD",
+  ["A"]                    = "STRAFELEFT",
+  ["D"]                    = "STRAFERIGHT",
+  ["UP"]                   = "MOVEFORWARD",
+  ["DOWN"]                 = "MOVEBACKWARD",
+  ["LEFT"]                 = "TURNLEFT",
+  ["RIGHT"]                = "TURNRIGHT",
+  ["SPACE"]                = "JUMP",
+  [m1.."SPACE"]            = "JUMP",
+  [m2.."SPACE"]            = "JUMP",
+  ["U"]                    = "FOCUSTARGET",
+  ["B"]                    = "OPENALLBAGS",
+  ["SHIFT-B"]              = "OPENALLBAGS",
+  ["MOUSEWHEELUP"]         = "CAMERAZOOMIN",
+  ["MOUSEWHEELDOWN"]       = "CAMERAZOOMOUT",
+  ["ALT-CTRL-W"]           = "TOGGLEAUTORUN",
 }
 
 Binder.global["modclicks"] = {

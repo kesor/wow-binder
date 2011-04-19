@@ -36,34 +36,34 @@ Binder.deathknight["keybinds"] = {
     ["Frost Presence"]      = { key = m1.."Q" },
     ["Raise Ally"]          = { key = m1.."W" },
     ["Raise Dead"]          = { key = m1.."X" },
-    ["Path of Frost"]       = { key = m1.."1" },
-    ["Death and Decay"]     = { key = m1.."4" },
-    ["Horn of Winter"]      = { key = m1.."A" },
-    ["Anti-Magic Shell"]    = { key = m1.."C" },
-    ["Icy Touch"]           = { key = m1.."D" },
-    ["Plague Strike"]       = { key = m1.."F" },
-    ["Empower Rune Weapon"] = { key = m1.."Q" },
-    ["Rune Strike"]         = { key = m1.."R" },
-    ["Outbreak"]            = { key = m1.."S" },
-    ["Necrotic Strike"]     = { key = m1.."V" },
-    ["Dark Simulacrum"]     = { key = m1.."X" },
-    ["Icebound Fortitude"]  = { key = m1.."Z" },
+    ["Path of Frost"]       = { key = m2.."1" },
+    ["Death and Decay"]     = { key = m2.."4" },
+    ["Horn of Winter"]      = { key = m2.."A" },
+    ["Anti-Magic Shell"]    = { key = m2.."C" },
+    ["Icy Touch"]           = { key = m2.."D" },
+    ["Plague Strike"]       = { key = m2.."F" },
+    ["Empower Rune Weapon"] = { key = m2.."Q" },
+    ["Rune Strike"]         = { key = m2.."R" },
+    ["Outbreak"]            = { key = m2.."S" },
+    ["Necrotic Strike"]     = { key = m2.."V" },
+    ["Dark Simulacrum"]     = { key = m2.."X" },
+    ["Icebound Fortitude"]  = { key = m2.."Z" },
   },
 }
 
 Binder.deathknight["blood_keybinds"] = {
   ["Heart Strike"]          = { key = "2" },
   ["Dancing Rune Weapon"]   = { key = "3" },
-  ["Bone Shield"]           = { key = m1.."2" },
-  ["Rune Tap"]              = { key = m1.."E" },
+  ["Bone Shield"]           = { key = m2.."2" },
+  ["Rune Tap"]              = { key = m2.."E" },
 }
 
 Binder.deathknight["frost_keybinds"] = {
   ["Blood Strike"]          = { key = "2" },
   ["Pillar of Frost"]       = { key = "3" },
-  ["Howling Blast"]         = { key = m1.."2" },
-  ["Hungering Cold"]        = { key = m1.."3" },
-  ["Frost Strike"]          = { key = m1.."E" },
+  ["Howling Blast"]         = { key = m2.."2" },
+  ["Hungering Cold"]        = { key = m2.."3" },
+  ["Frost Strike"]          = { key = m2.."E" },
 }
 
 Binder.deathknight["unholy_keybinds"] = {
@@ -71,7 +71,7 @@ Binder.deathknight["unholy_keybinds"] = {
   ["Blood Strike"]          = { key = "2" },
   ["Unholy Frenzy"]         = { key = "3" },
   ["Anti-Magic Zone"]       = { key = m1.."R" },
-  ["Dark Transformation"]   = { key = m1.."2" },
-  ["Summon Gargoyle"]       = { key = m1.."3" },
-  ["Scourge Strike"]        = { key = m1.."E" },
+  ["Dark Transformation"]   = { key = m2.."2" },
+  ["Summon Gargoyle"]       = { key = m2.."3" },
+  ["Scourge Strike"]        = { key = m2.."E" },
 }

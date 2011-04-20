@@ -1,4 +1,4 @@
 local _, Binder = ...
 
-Binder.m1 = 'CTRL-'
-Binder.m2 = 'SHIFT-'
+Binder.m1 = 'SHIFT-'
+Binder.m2 = 'CTRL-'

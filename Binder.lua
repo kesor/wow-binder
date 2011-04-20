@@ -26,11 +26,9 @@ function Binder:LoadMacros()
       self:MapMacro(macro_name, macro_body)
     end
   end
-  if self.talent then
-    if (self[self.class][self.talent .. '_macros']) then
-      for macro_name, macro_body in pairs(self[self.class][self.talent .. '_macros']) do
-        self:MapMacro(macro_name, macro_body)
-      end
+  if (self[self.class][self.talent .. '_macros']) then
+    for macro_name, macro_body in pairs(self[self.class][self.talent .. '_macros']) do
+      self:MapMacro(macro_name, macro_body)
     end
   end
 end
@@ -90,12 +88,10 @@ function Binder:LoadKeys()
     end
   end
   -- talent
-  if self.talent then
-    if (self[self.class][self.talent .. '_keybinds']) then
-      for spell, attrs in pairs(self[self.class][self.talent .. '_keybinds']) do
-        -- SetOverrideBindingSpell(self.eventframe, false, attrs['key'], spell)
-        self:MapKey(attrs['key'], spell)
-      end
+  if (self[self.class][self.talent .. '_keybinds']) then
+    for spell, attrs in pairs(self[self.class][self.talent .. '_keybinds']) do
+      -- SetOverrideBindingSpell(self.eventframe, false, attrs['key'], spell)
+      self:MapKey(attrs['key'], spell)
     end
   end
 end
@@ -107,8 +103,12 @@ function Binder:WhoAmI()
   self.class = string.lower(class)
   local talent_group = GetActiveTalentGroup()
   local talent_tree = GetPrimaryTalentTree(false, false, talent_group)
-  local _, talent = GetTalentTabInfo(talent_tree)
-  self.talent = string.lower(talent)
+  if talent_tree then
+    local _, talent = GetTalentTabInfo(talent_tree)
+    self.talent = string.lower(talent)
+  else
+    self.talent = "no_talent"
+  end
 
   local whoami = self.race .. ' ' .. self.class .. ' ' .. self.talent
   print("Loading Binder for: " .. whoami)

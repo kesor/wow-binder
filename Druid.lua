@@ -6,31 +6,47 @@ local m2 = Binder.m2 -- 'SHIFT-'
 Binder.druid = {}
 
 Binder.druid["macros"] = {
-  ["Frenzied Regen"]     = "#showtooltip Frenzied Regeneration\n/cast [stance:1] Frenzied Regeneration; !Bear Form",
-  ["Demo Roar"]          = "#showtooltip Demoralizing Roar\n/cast [stance:1] Demoralizing Roar; !Bear Form",
-  ["Faerie Fire"]        = "#showtooltip Faerie Fire\n/cast [nostance] Faerie Fire\n/cast [stance:1/3] Faerie Fire (Feral)\n/cast [stance:2/4/5/6] Faerie Fire",
-  ["Dash"]               = "#showtooltip Dash\n/cast [stance:3] Dash; !Cat Form",
-  ["Stampeding Roar"]    = "#showtooltip Stampeding Roar\n/cast [stance:1] Stampeding Roar(Bear Form); [stance:3] Stampeding Roar(Cat Form); !Bear Form",
-  ["Maim"]               = "#showtooltip Maim\n/startattack\n/cast [stance:3] Maim; !Cat Form",
-  ["Skull Bash"]         = "#showtooltip Skull Bash\n/cast [stance:1] Enrage\n/cast [stance:1] Skull Bash(Bear Form); [stance:3] Skull Bash(Cat Form); !Bear Form",
-  ["Bash"]               = "#showtooltip Bash\n/cast Enrage\n/cast [stance:1] Bash; !Bear Form",
-  ["Prowl"]              = "#showtooltip Prowl\n/cast [nostealth,stance:3] !Prowl; [stealth,stance:3] Pounce; !Cat Form",
-  ["Challenging Roar"]   = "#showtooltip Challenging Roar\n/cast [stance:1] Challenging Roar; !Bear Form",
-  ["Hurricane"]          = "#showtooltip Hurricane\n/cast !Hurricane",
-  ["Wild Mushroom"]      = "#showtooltip Wild Mushroom\n/cast !Wild Mushroom",
-  ["Force of Nature"]    = "#showtooltip Force of Nature\n/cast !Force of Nature",
-  ["Nature's Swiftness"] = "#showtooltip Nature's Swiftness\n/cast Nature's Swiftness\n/cast Healing Touch",
+  ["Frenzied Regeneration"] = "/cast [stance:1] Frenzied Regeneration; !Bear Form",
+  ["Demo Roar"]             = "/cast [stance:1] Demoralizing Roar; !Bear Form",
+  ["Faerie Fire"]           = "/cast [nostance] Faerie Fire\n/cast [stance:1/3] Faerie Fire (Feral)\n/cast [stance:2/4/5/6] Faerie Fire",
+  ["Dash"]                  = "/cast [stance:3] Dash; !Cat Form",
+  ["Stampeding Roar"]       = "/cast [stance:1] Stampeding Roar(Bear Form); [stance:3] Stampeding Roar(Cat Form); !Bear Form",
+  ["Maim"]                  = "/startattack\n/cast [stance:3] Maim; !Cat Form",
+  ["Skull Bash"]            = "/cast [stance:1] Enrage\n/cast [stance:1] Skull Bash(Bear Form); [stance:3] Skull Bash(Cat Form); !Bear Form",
+  ["Bash"]                  = "/cast Enrage\n/cast [stance:1] Bash; !Bear Form",
+  ["Prowl"]                 = "/cast [nostealth,stance:3] !Prowl; [stealth,stance:3] Pounce; !Cat Form",
+  ["Challenging Roar"]      = "/cast [stance:1] Challenging Roar; !Bear Form",
+  ["Hurricane"]             = "/cast !Hurricane",
+  ["Wild Mushroom"]         = "/cast !Wild Mushroom",
+  ["Force of Nature"]       = "/cast !Force of Nature",
 
-  --
-  ["Mangle"]             = "#showtooltip Mangle\n/startattack\n/cast [stance:1] Mangle(Bear Form); [stance:3] Mangle(Cat Form); !Bear Form",
-  ["Rake"]               = "#showtooltip Rake\n/startattack\n/cast [stance:1] Lacerate; [stance:3] Rake; !Bear Form",
-  ["Thrash"]             = "#showtooltip Thrash\n/startattack\n/cast [stance:1] Thrash; [stance:3] Rip; !Bear Form",
-  ["Pulverize"]          = "#showtooltip Pulverize\n/startattack\n/cast [stance:1] Pulverize; [stance:3] Ferocious Bite; !Bear Form",
-  ["Feral Charge"]       = "#showtooltip Feral Charge\n/cast [stance:1] Feral Charge(Bear Form); [stance:3] Feral Charge(Cat Form); !Bear Form",
+  -- Feral macros
+  ["Mangle"]                = "/startattack\n/cast [stance:1] Mangle(Bear Form); [stance:3] Mangle(Cat Form); !Bear Form",
+  ["Rake"]                  = "/startattack\n/cast [stance:1] Lacerate; [stance:3] Rake; !Bear Form",
+  ["Thrash"]                = "/startattack\n/cast [stance:1] Thrash; [stance:3] Rip; !Bear Form",
+  ["Pulverize"]             = "/startattack\n/cast [stance:1] Pulverize; [stance:3] Ferocious Bite; !Bear Form",
+  ["Feral Charge"]          = "/cast [stance:1] Feral Charge(Bear Form); [stance:3] Feral Charge(Cat Form); !Bear Form",
 
-  -- Mouseover macros
-  ["Lifebloom"] = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Lifebloom",
-  ["Rejuvenation"] = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Rejuvenation",
+  -- Restoration mouseover macros
+  ["Lifebloom"]             = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Lifebloom",
+  ["Rejuvenation"]          = "/cast [@mouseover,help,nodead][help][@player][] Rejuvenation",
+  ["Regrowth"]              = "/cast [@mouseover,help,nodead][help][@player][] Regrowth",
+  ["Nourish"]               = "/cast [@mouseover,help,nodead][help][@player][] Nourish",
+  ["Wild Growth"]           = "/cast [@mouseover,help,nodead][help][@player][] Wild Growth",
+  ["Swiftmend"]             = "/cast [@mouseover,help,nodead][help][@player][] Swiftmend",
+  ["Healing Touch"]         = "/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
+  ["Nature's Swiftness"]    = "/cast Nature's Swiftness\n/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
+  ["Revive"]                = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead] Rebirth",
+  ["Rebirth"]               = "/cast [@mouseover,help,dead,combat][help,dead,combat] Rebirth",
+  ["Remove Corruption"]     = "/cast [@mouseover,help,nodead][help][@player][] Remove Corruption",
+
+  -- Moonkin macros
+  ["Insect Swarm"]          = "/cast [harm,nodead][@targettarget,harm,nodead][] Insect Swarm",
+  ["Moonfire"]              = "/cast [harm,nodead][@targettarget,harm,nodead][] Moonfire",
+  ["Starfire"]              = "/cast [harm,nodead][@targettarget,harm,nodead][] Starfire",
+  ["Wrath"]                 = "/cast [harm,nodead][@targettarget,harm,nodead][] Wrath",
+  ["Entangling Roots"]      = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Entangling Roots",
+  ["Solar Beam"]            = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Solar Beam",
 }
 
 Binder.druid["keybinds"] = {
@@ -71,7 +87,7 @@ Binder.druid["keybinds"] = {
   ["Wild Mushroom"]           = { key = m2.."G" },
   ["Swift Flight Form"]       = { key = m2.."H" },
   ["Maim"]                    = { key = m2.."V" },
-  ["Frenzied Regen"]          = { key = m2.."X" },
+  ["Frenzied Regeneration"]   = { key = m2.."X" },
   ["Revive"]                  = { key = m2.."L" },
   ["Insect Swarm"]            = { key = m2.."S" },
   ["Wild Mushroom: Detonate"] = { key = m2.."T" },

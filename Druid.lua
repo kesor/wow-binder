@@ -7,7 +7,7 @@ Binder.druid = {}
 
 Binder.druid["macros"] = {
   ["Frenzied Regeneration"] = "/cast [stance:1] Frenzied Regeneration; !Bear Form",
-  ["Demo Roar"]             = "/cast [stance:1] Demoralizing Roar; !Bear Form",
+  ["Demoralizing Roar"]     = "/cast [stance:1] Demoralizing Roar; !Bear Form",
   ["Faerie Fire"]           = "/cast [nostance] Faerie Fire\n/cast [stance:1/3] Faerie Fire (Feral)\n/cast [stance:2/4/5/6] Faerie Fire",
   ["Dash"]                  = "/cast [stance:3] Dash; !Cat Form",
   ["Stampeding Roar"]       = "/cast [stance:1] Stampeding Roar(Bear Form); [stance:3] Stampeding Roar(Cat Form); !Bear Form",
@@ -58,43 +58,63 @@ Binder.druid["keybinds"] = {
   ["Starfire"]                = { key = "2" },
   ["Faerie Fire"]             = { key = "3" },
   ["Dash"]                    = { key = "4" },
-  ["Demo Roar"]               = { key = "5" },
+  ["Demoralizing Roar"]       = { key = "5" },
   ["Growl"]                   = { key = "6" },
-  ["Healing Touch"]           = { key = "C" },
-  ["Skull Bash"]              = { key = "E" },
-  ["Cyclone"]                 = { key = "F" },
-  ["Tranquility"]             = { key = "H" },
   ["Lifebloom"]               = { key = "Q" },
+  ["Skull Bash"]              = { key = "E" },
+  -- R: Starsurge / Maul / Swiftmend
   ["Travel Form"]             = { key = "T" },
-  ["Regrowth"]                = { key = "V" },
-  ["Nourish"]                 = { key = "X" },
+  -- Y: Mount
+  -- U: Focus
+  ["Cyclone"]                 = { key = "F" },
+  -- G: PvP Trinket
+  ["Tranquility"]             = { key = "H" },
+  -- J: First Aid
   ["Entangling Roots"]        = { key = "Z" },
+  ["Nourish"]                 = { key = "X" },
+  ["Healing Touch"]           = { key = "C" },
+  ["Regrowth"]                = { key = "V" },
+
+  -- m1+1: Pet Attack
+  -- m1+2: Pet Stay
+  -- m1+3: Pet Move
   ["Hurricane"]               = { key = m1.."4" },
-  ["Soothe"]                  = { key = m1.."A" },
-  ["Cat Form"]                = { key = m1.."E" },
-  ["Mark of the Wild"]        = { key = m1.."G" },
   ["Bear Form"]               = { key = m1.."Q" },
-  ["Innervate"]               = { key = m1.."R" },
-  ["Hibernate"]               = { key = m1.."S" },
   ["Rebirth"]                 = { key = m1.."W" },
+  ["Cat Form"]                = { key = m1.."E" },
+  ["Innervate"]               = { key = m1.."R" },
+  ["Soothe"]                  = { key = m1.."A" },
+  ["Hibernate"]               = { key = m1.."S" },
+  -- m1+D: Force of Nature
+  -- m1+F: Feral Charge / Wild Growth / Starfall
+  ["Mark of the Wild"]        = { key = m1.."G" },
+  -- m1+Z: Racial
   ["Claw"]                    = { key = m1.."X" },
+
   ["Challenging Roar"]        = { key = m2.."1" },
   ["Remove Corruption"]       = { key = m2.."2" },
   ["Stampeding Roar"]         = { key = m2.."3" },
   ["Thorns"]                  = { key = m2.."4" },
   ["Aquatic Form"]            = { key = m2.."5" },
+  -- m2+Q: Berserk / Tree of Life / Moonkin Form
+  -- m2+W: Life (healthstone/potion)
+  -- m2+E: Savage Roar / Nature's Swiftness / Typhoon
+  -- m2+R: Enrage / NAture's Swiftness / Solar Beam
+  ["Wild Mushroom: Detonate"] = { key = m2.."T" },
+
   ["Prowl"]                   = { key = m2.."A" },
-  ["Rejuvenation"]            = { key = m2.."C" },
+  ["Insect Swarm"]            = { key = m2.."S" },
   ["Moonfire"]                = { key = m2.."D" },
   ["Nature's Grasp"]          = { key = m2.."F" },
   ["Wild Mushroom"]           = { key = m2.."G" },
   ["Swift Flight Form"]       = { key = m2.."H" },
-  ["Maim"]                    = { key = m2.."V" },
-  ["Frenzied Regeneration"]   = { key = m2.."X" },
-  ["Revive"]                  = { key = m2.."L" },
-  ["Insect Swarm"]            = { key = m2.."S" },
-  ["Wild Mushroom: Detonate"] = { key = m2.."T" },
+
   ["Barkskin"]                = { key = m2.."Z" },
+  ["Frenzied Regeneration"]   = { key = m2.."X" },
+  ["Rejuvenation"]            = { key = m2.."C" },
+  ["Maim"]                    = { key = m2.."V" },
+
+  ["Revive"]                  = { key = m2.."L" },
 }
 
 Binder.druid["feral_keybinds"] = {

@@ -47,6 +47,9 @@ Binder.druid["macros"] = {
   ["Wrath"]                 = "/cast [harm,nodead][@targettarget,harm,nodead][] Wrath",
   ["Entangling Roots"]      = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Entangling Roots",
   ["Solar Beam"]            = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Solar Beam",
+
+  -- General useful macro
+  ["Mark of the Wild"]      = "/cast [@player] !Mark of the Wild",
 }
 
 Binder.druid["keybinds"] = {

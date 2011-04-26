@@ -50,6 +50,7 @@ function Binder:MapKey(key, action)
   end
 
   -- general key
+  -- print("GeneralKey: "..key.." to "..action)
   SetOverrideBinding(self.eventframe, false, key, action)
 end
 
@@ -105,13 +106,12 @@ function Binder:WhoAmI()
   local talent_tree = GetPrimaryTalentTree(false, false, talent_group)
   if talent_tree then
     local _, talent = GetTalentTabInfo(talent_tree)
-    self.talent = string.lower(talent)
+    if talent then
+      self.talent = string.lower(talent)
+    end
   else
     self.talent = "no_talent"
   end
-
-  local whoami = self.race .. ' ' .. self.class .. ' ' .. self.talent
-  print("Loading Binder for: " .. whoami)
 
   return { self.race, self.class, self.talent }
 end
@@ -120,14 +120,20 @@ function Binder:init()
   self.eventframe = CreateFrame("Frame", eframe, UIParent)
   -- self.widget : a button widget that saves the macro bindings on itself
   self.widget = CreateFrame("Button", bframe, UIParent, "SecureActionButtonTemplate")
-  -- self.eventframe:RegisterEvent("VARIABLES_LOADED")
   self.eventframe:RegisterEvent("PLAYER_ALIVE")
+  self.eventframe:RegisterEvent("VARIABLES_LOADED")
 
   self.eventframe:SetScript("OnEvent",
     function(...)
+      if not self.already_loaded and event == 'VARIABLES_LOADED' then
+        return
+      end
       self:WhoAmI()
+      local whoami = self.race .. ' ' .. self.class .. ' ' .. self.talent
+      print("Loading Binder for: " .. whoami)
       self:LoadMacros()
       self:LoadKeys()
+      self.already_loaded = true
     end
   )
 end

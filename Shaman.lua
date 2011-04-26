@@ -7,12 +7,18 @@ Binder.shaman = {}
 
 Binder.shaman["macros"] = {
   ["Heroism"]               = "/cast Heroism\n/cast Bloodlust",
-  ["Call of the Elements"]  = "#showtooltip Call of the Elements\n/cast Call of the Elements",
-  ["Call of the Spirits"]   = "#showtooltip Call of the Spirits\n/cast Call of the Spirits",
-  ["Call of the Ancestors"] = "#showtooltip Call of the Ancestors\n/cast Call of the Ancestors",
-  ["Healing Rain"]          = "#showtooltip Healing Rain\n/cast !Healing Rain",
-  ["EM LB"]                 = "#showtooltip Elemental Mastery\n/cast Elemental Mastery\n/cast Lava Burst",
-  ["NS GHW"]                = "#showtooltip Nature's Swiftness\n/cast Nature's Swiftness\n/cast Greater Healing Wave",
+  ["Call of the Elements"]  = "/cast Call of the Elements",
+  ["Call of the Spirits"]   = "/cast Call of the Spirits",
+  ["Call of the Ancestors"] = "/cast Call of the Ancestors",
+  ["Healing Rain"]          = "/cast !Healing Rain",
+  ["EM LB"]                 = "/cast Elemental Mastery\n/cast Lava Burst",
+  ["NS GHW"]                = "/cast Nature's Swiftness\n/cast Greater Healing Wave",
+
+  ["Flame Shock"]           = "/stackattack\n/cast !Flame Shock",
+  ["Earth Shock"]           = "/stackattack\n/cast !Earth Shock",
+  ["Stormstrike"]           = "/startattack\n/cast !Stormstrike",
+  ["Unleash Elements"]      = "/startattack\n/cast !Unleash Elements",
+  ["Lava Lash"]             = "/startattack\n/cast !Lava Lash",
 }
 
 Binder.shaman["keybinds"] = {

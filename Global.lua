@@ -10,6 +10,7 @@ Binder.global["macros"] = {
   ["MOUNT"]          = "/click GoGoButton",
   ["BANDAID"]        = "#showtooltip Dense Embersilk Bandage\n/use [@player] Dense Embersilk Bandage",
   ["Pet Move"]       = "/petmoveto",
+  ["LIVE"]           = "/use Healthstone",
 }
 
 Binder.global["macro_keybinds"] = {
@@ -35,7 +36,15 @@ Binder.racial = {
   ["bloodelf"]  = "Arcane Torrent",
 }
 
+-- all the possible options are here:
+-- http://www.wowpedia.org/BindingID
 Binder.global["keybinds"] = {
+  ["ALT-1"]                = "ACTIONBUTTON1",
+  ["ALT-2"]                = "ACTIONBUTTON2",
+  ["ALT-3"]                = "ACTIONBUTTON3",
+  ["ALT-4"]                = "ACTIONBUTTON4",
+  ["ALT-5"]                = "ACTIONBUTTON5",
+  ["ALT-6"]                = "ACTIONBUTTON6",
   ["SHIFT-UP"]             = "NONE",
   ["SHIFT-DOWN"]           = "NONE",
   ["SHIFT-MOUSEWHEELUP"]   = "NONE",
@@ -57,19 +66,22 @@ Binder.global["keybinds"] = {
   ["MOUSEWHEELUP"]         = "CAMERAZOOMIN",
   ["MOUSEWHEELDOWN"]       = "CAMERAZOOMOUT",
   ["ALT-CTRL-W"]           = "TOGGLEAUTORUN",
+  [m1.."V"]                = "ALLNAMEPLATES",
+  [m2.."V"]                = "NAMEPLATES",
+  [m1..m2.."V"]            = "FRIENDNAMEPLATES",
 }
 
 Binder.global["modclicks"] = {
-  ["SELFCAST"]                 = "ALT",
-  ["FOCUSCAST"]                = "NONE",
-  ["AUTOLOOTTOGGLE"]           = "SHIFT",
-  ["STICKYCAMERA"]             = "CTRL",
-  ["CHATLINK"]                 = "SHIFT-BUTTON1",
-  ["DRESSUP"]                  = "SHIFT-BUTTON1",
-  ["SOCKETITEM"]               = "SHIFT-BUTTON2",
-  ["SPLITSTACK"]               = "SHIFT",
-  ["PICKUPACTION"]             = "SHIFT",
-  ["COMPAREITEMS"]             = "SHIFT",
-  ["OPENALLBAGS"]              = "SHIFT",
-  ["QUESTWATCHTOGGLE"]         = "SHIFT",
+--  ["SELFCAST"]                 = "ALT",
+--  ["FOCUSCAST"]                = "NONE",
+--  ["AUTOLOOTTOGGLE"]           = "SHIFT",
+--  ["STICKYCAMERA"]             = "SHIFT",
+--  ["CHATLINK"]                 = "SHIFT-BUTTON1",
+--  ["DRESSUP"]                  = "SHIFT-BUTTON1",
+--  ["SOCKETITEM"]               = "SHIFT-BUTTON2",
+--  ["SPLITSTACK"]               = "SHIFT",
+--  ["PICKUPACTION"]             = "SHIFT",
+--  ["COMPAREITEMS"]             = "SHIFT",
+--  ["OPENALLBAGS"]              = "SHIFT",
+--  ["QUESTWATCHTOGGLE"]         = "SHIFT",
 }

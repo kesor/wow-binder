@@ -132,7 +132,7 @@ Binder.druid["feral_keybinds"] = {
   ["Berserk"]                 = { key = m2.."Q" },
 }
 
-Binder.druid["resto_keybinds"] = {
+Binder.druid["restoration_keybinds"] = {
   ["Nature's Swiftness"]      = { key = m2.."R" },
   ["Swiftmend"]               = { key = "R" },
   ["Wild Growth"]             = { key = m1.."F" },

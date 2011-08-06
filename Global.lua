@@ -18,7 +18,7 @@ Binder.global["macro_keybinds"] = {
   ["MOUNT"]          = { key = "Y" },
   ["BANDAID"]        = { key = "J" },
   ["PVPTRINKET"]     = { key = "G" },
-  ["LIVE"]           = { key = m1.."W" },
+  ["LIVE"]           = { key = m2.."W" },
 }
 
 Binder.racial = {

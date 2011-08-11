@@ -50,7 +50,6 @@ function Binder:MapKey(key, action)
   end
 
   -- general key
-  -- print("GeneralKey: "..key.." to "..action)
   SetOverrideBinding(self.eventframe, false, key, action)
 end
 
@@ -59,13 +58,11 @@ function Binder:LoadKeys()
   if (self.global) then
     if (self.global['keybinds']) then
       for key, command in pairs(self.global['keybinds']) do
-        -- SetOverrideBinding(self.eventframe, false, key, command)
         self:MapKey(key,command)
       end
     end
     if (self.global['macro_keybinds']) then
       for spell, attrs in pairs(self.global['macro_keybinds']) do
-        -- SetOverrideBindingSpell(self.eventframe, false, attrs['key'], spell)
         self:MapKey(attrs['key'], spell)
       end
     end
@@ -78,20 +75,17 @@ function Binder:LoadKeys()
   -- racial
   if (self.racial and self.racial[self.race]) then
     -- Hardcoded Racial ability for (m1 + Z) key
-    -- SetOverrideBindingSpell(self.eventframe, false, self.m1.."Z", self.racial[self.race])
     self:MapKey(self.m1.."Z",self.racial[self.race])
   end
   -- class
   if (self[self.class] and self[self.class]['keybinds']) then
     for spell, attrs in pairs(self[self.class]['keybinds']) do
-      -- SetOverrideBindingSpell(self.eventframe, false, attrs['key'], spell)
       self:MapKey(attrs['key'], spell)
     end
   end
   -- talent
   if (self[self.class][self.talent .. ' keybinds']) then
     for spell, attrs in pairs(self[self.class][self.talent .. ' keybinds']) do
-      -- SetOverrideBindingSpell(self.eventframe, false, attrs['key'], spell)
       self:MapKey(attrs['key'], spell)
     end
   end

@@ -50,6 +50,7 @@ Binder.druid["macros"] = {
 
   -- General useful macro
   ["Mark of the Wild"]      = "/cast [@player] !Mark of the Wild",
+  ["Thorns"]                = "/cast [@player] !Thorns",
 }
 
 Binder.druid["keybinds"] = {

@@ -79,7 +79,7 @@ Binder.warrior["keybinds"] = {
   ["Shield Wall"]        = { key = m2.."Z" },
 }
 
-Binder.warrior["protection_keybinds"] = {
+Binder.warrior["protection keybinds"] = {
   ["Concussion Blow"]    = { key = "`" },
   ["Devastate"]          = { key = "1" },
   ["Shield Slam"]        = { key = "2" },
@@ -92,7 +92,7 @@ Binder.warrior["protection_keybinds"] = {
   ["Vigilance"]          = { key = m2.."T" },
 }
 
-Binder.warrior["fury_keybinds"] = {
+Binder.warrior["fury keybinds"] = {
   ["Raging Blow"]        = { key = "`" },
   ["Bloodthirst"]        = { key = "1" },
   ["Slam"]               = { key = "2" },
@@ -105,7 +105,7 @@ Binder.warrior["fury_keybinds"] = {
   ["Piercing Howl"]      = { key = m2.."T" },
 }
 
-Binder.warrior["arms_keybinds"] = {
+Binder.warrior["arms keybinds"] = {
   ["Throwdown"]          = { key = "`" },
   ["Mortal Strike"]      = { key = "1" },
   ["Slam"]               = { key = "2" },

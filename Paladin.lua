@@ -49,7 +49,7 @@ Binder.paladin["keybinds"] = {
   ["Divine Protection"]         = { key = m2.."Z" },
 }
 
-Binder.paladin["retribution_keybinds"] = {
+Binder.paladin["retribution keybinds"] = {
   ["Exorcism"]                  = { key = "1" },
   ["Divine Storm"]              = { key = "3" },
   ["Repentance"]                = { key = "F" },
@@ -57,7 +57,7 @@ Binder.paladin["retribution_keybinds"] = {
   ["Zealotry"]                  = { key = m1.."F" },
 }
 
-Binder.paladin["protection_keybinds"] = {
+Binder.paladin["protection keybinds"] = {
   ["Hammer of the Righteous"]   = { key = "1" },
   ["Ardent Defender"]           = { key = "3" },
   ["Avenger's Shield"]          = { key = "F" },
@@ -65,7 +65,7 @@ Binder.paladin["protection_keybinds"] = {
   ["Divine Guardian"]           = { key = m1.."F" },
 }
 
-Binder.paladin["holy_bindings"] = {
+Binder.paladin["holy bindings"] = {
   ["Exorcism"]                  = { key = "1" },
   ["Divine Favor"]              = { key = "3" },
   ["Beacon of Light"]           = { key = "5" },

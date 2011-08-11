@@ -56,7 +56,7 @@ Binder.mage["keybinds"] = {
   ["Ice Block"]             = { key = m2.."X" },
 }
 
-Binder.mage["frost_keybinds"] = {
+Binder.mage["frost keybinds"] = {
   ["Deep Freeze"]            = { key = "`" },
   ["Frostfire Bolt"]         = { key = "4" },
   ["Cold Snap"]              = { key = "C" },

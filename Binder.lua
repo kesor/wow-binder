@@ -26,8 +26,8 @@ function Binder:LoadMacros()
       self:MapMacro(macro_name, macro_body)
     end
   end
-  if (self[self.class][self.talent .. '_macros']) then
-    for macro_name, macro_body in pairs(self[self.class][self.talent .. '_macros']) do
+  if (self[self.class][self.talent .. ' macros']) then
+    for macro_name, macro_body in pairs(self[self.class][self.talent .. ' macros']) do
       self:MapMacro(macro_name, macro_body)
     end
   end
@@ -89,8 +89,8 @@ function Binder:LoadKeys()
     end
   end
   -- talent
-  if (self[self.class][self.talent .. '_keybinds']) then
-    for spell, attrs in pairs(self[self.class][self.talent .. '_keybinds']) do
+  if (self[self.class][self.talent .. ' keybinds']) then
+    for spell, attrs in pairs(self[self.class][self.talent .. ' keybinds']) do
       -- SetOverrideBindingSpell(self.eventframe, false, attrs['key'], spell)
       self:MapKey(attrs['key'], spell)
     end
@@ -110,7 +110,7 @@ function Binder:WhoAmI()
       self.talent = string.lower(talent)
     end
   else
-    self.talent = "no_talent"
+    self.talent = "no talent"
   end
 
   return { self.race, self.class, self.talent }

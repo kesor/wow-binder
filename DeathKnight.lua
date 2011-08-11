@@ -51,14 +51,14 @@ Binder.deathknight["keybinds"] = {
   },
 }
 
-Binder.deathknight["blood_keybinds"] = {
+Binder.deathknight["blood keybinds"] = {
   ["Heart Strike"]          = { key = "2" },
   ["Dancing Rune Weapon"]   = { key = "3" },
   ["Bone Shield"]           = { key = m2.."2" },
   ["Rune Tap"]              = { key = m2.."E" },
 }
 
-Binder.deathknight["frost_keybinds"] = {
+Binder.deathknight["frost keybinds"] = {
   ["Blood Strike"]          = { key = "2" },
   ["Pillar of Frost"]       = { key = "3" },
   ["Howling Blast"]         = { key = m2.."2" },
@@ -66,7 +66,7 @@ Binder.deathknight["frost_keybinds"] = {
   ["Frost Strike"]          = { key = m2.."E" },
 }
 
-Binder.deathknight["unholy_keybinds"] = {
+Binder.deathknight["unholy keybinds"] = {
   ["Gnaw"]                  = { key = "`" },
   ["Blood Strike"]          = { key = "2" },
   ["Unholy Frenzy"]         = { key = "3" },

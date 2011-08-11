@@ -65,7 +65,7 @@ Binder.warlock["keybinds"] = {
   ["Soulshatter"]              = { key = m2.."Z" },
 }
 
-Binder.warlock["destruction_keybinds"] = {
+Binder.warlock["destruction keybinds"] = {
   ["Shadowfury"]               = { key = "`" },
   ["Chaos Bolt"]               = { key = "4" },
   ["Conflagrate"]              = { key = "5" },
@@ -77,7 +77,7 @@ Binder.warlock["destruction_keybinds"] = {
   ["Bane of Havoc"]            = { key = m2.."L" },
 }
 
-Binder.warlock["demonology_keybinds"] = {
+Binder.warlock["demonology keybinds"] = {
   ["Demon Leap"]               = { key = "`" },
   ["Demonic Empowerment"]      = { key = "4" },
   ["Hand of Gul'dan"]          = { key = "5" },
@@ -89,7 +89,7 @@ Binder.warlock["demonology_keybinds"] = {
   ["Summon Felguard"]          = { key = m2.."L" },
 }
 
-Binder.warlock["affliction_keybinds"] = {
+Binder.warlock["affliction keybinds"] = {
   ["Soul Swap"]                = { key = "`" },
   ["Haunt"]                    = { key = "4" },
   ["Unstable Affliction"]      = { key = "5" },

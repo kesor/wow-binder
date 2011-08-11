@@ -55,7 +55,7 @@ Binder.priest["keybinds"] = {
   ["Binding Heal"]              = { key = m2.."X" },
 }
 
-Binder.priest["shadow_keybinds"] = {
+Binder.priest["shadow keybinds"] = {
   ["Psychic Horror"]            = { key = "6" },
   ["Silence"]                   = { key = "E" },
   ["Mind Flay"]                 = { key = "Q" },
@@ -65,7 +65,7 @@ Binder.priest["shadow_keybinds"] = {
   ["Dispersion"]                = { key = m2.."Z" },
 }
 
-Binder.priest["holy_keybinds"] = {
+Binder.priest["holy keybinds"] = {
   ["Lightwell"]                 = { key = "6" },
   ["Holy Word: Chastise"]       = { key = "E" },
   ["Circle of Healing"]         = { key = "Q" },
@@ -73,7 +73,7 @@ Binder.priest["holy_keybinds"] = {
   ["Guardian Spirit"]           = { key = m2.."Z" },
 }
 
-Binder.priest["discipline_keybinds"] = {
+Binder.priest["discipline keybinds"] = {
   ["Inner Focus"]               = { key = "6" },
   ["Power Word: Barrier"]       = { key = "E" },
   ["Penance"]                   = { key = "Q" },

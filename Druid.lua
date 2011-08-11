@@ -117,7 +117,7 @@ Binder.druid["keybinds"] = {
   ["Revive"]                  = { key = m2.."L" },
 }
 
-Binder.druid["feral_keybinds"] = {
+Binder.druid["feral combat keybinds"] = {
   ["Wrath"]                   = { key = "=" },
   ["Ravage"]                  = { key = "Q" },
   ["Maul"]                    = { key = "R" },
@@ -132,7 +132,7 @@ Binder.druid["feral_keybinds"] = {
   ["Berserk"]                 = { key = m2.."Q" },
 }
 
-Binder.druid["restoration_keybinds"] = {
+Binder.druid["restoration keybinds"] = {
   ["Nature's Swiftness"]      = { key = m2.."R" },
   ["Swiftmend"]               = { key = "R" },
   ["Wild Growth"]             = { key = m1.."F" },
@@ -140,7 +140,7 @@ Binder.druid["restoration_keybinds"] = {
   ["Tree of Life"]            = { key = m2.."Q" },
 }
 
-Binder.druid["balance_keybinds"] = {
+Binder.druid["balance keybinds"] = {
   ["Starsurge"]               = { key = "R" },
   ["Force of Nature"]         = { key = m1.."D" },
   ["Starfall"]                = { key = m1.."F" },

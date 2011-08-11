@@ -52,7 +52,7 @@ Binder.rogue["keybinds"] = {
   ["Evasion"]             = { key = m2.."Z" },
 }
 
-Binder.rogue["subtelty_keybinds"] = {
+Binder.rogue["subtelty keybinds"] = {
   ["Backstab"]            = { key = "1" },
   ["Hemorrhage"]          = { key = "2" },
   ["Shadowstep"]          = { key = m1.."F" },
@@ -61,7 +61,7 @@ Binder.rogue["subtelty_keybinds"] = {
   ["Shadow Dance"]        = { key = m2.."Q" },
 }
 
-Binder.rogue["combat_keybinds"] = {
+Binder.rogue["combat keybinds"] = {
   ["Sinister Strike"]     = { key = "1" },
   ["Revealing Strike"]    = { key = "2" },
   ["Blade Flurry"]        = { key = m1.."F" },
@@ -69,7 +69,7 @@ Binder.rogue["combat_keybinds"] = {
   ["Adrenaline Rush"]     = { key = m2.."Q" },
 }
 
-Binder.rogue["assassination_keybinds"] = {
+Binder.rogue["assassination keybinds"] = {
   ["Mutilate"]            = { key = "1" },
   ["Backstab"]            = { key = "2" },
   ["Vendetta"]            = { key = m2.."3" },

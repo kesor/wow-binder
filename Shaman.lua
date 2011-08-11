@@ -69,7 +69,7 @@ Binder.shaman["keybinds"] = {
   ["Stoneclaw Totem"]            = { key = m2.."Z" },
 }
 
-Binder.shaman["elemental_keybinds"] = {
+Binder.shaman["elemental keybinds"] = {
   ["Lava Burst"]                 = { key = "4" },
   ["Thunderstorm"]               = { key = "Q" },
   ["EM LB"]                      = { key = "R" },
@@ -77,7 +77,7 @@ Binder.shaman["elemental_keybinds"] = {
   ["Earthquake"]                 = { key = m2.."R" },
 }
 
-Binder.shaman["enhancement_keybinds"] = {
+Binder.shaman["enhancement keybinds"] = {
   ["Feral Spirit"]               = { key = "4" },
   ["Stormstrike"]                = { key = "Q" },
   ["Lava Lash"]                  = { key = "R" },
@@ -85,7 +85,7 @@ Binder.shaman["enhancement_keybinds"] = {
   ["Shamanistic Rage"]           = { key = m2.."R" },
 }
 
-Binder.shaman["restoration_keybinds"] = {
+Binder.shaman["restoration keybinds"] = {
   ["Lava Burst"]                 = { key = "4" },
   ["Earth Shield"]               = { key = "Q" },
   ["Riptide"]                    = { key = "R" },

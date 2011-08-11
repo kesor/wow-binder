@@ -61,7 +61,7 @@ Binder.hunter["keybinds"] = {
   ["Camouflage"]            = { key = m2.."Z" },
 }
 
-Binder.hunter["survival_keybinds"] = {
+Binder.hunter["survival keybinds"] = {
   ["Wyvern Sting"]          = { key = "`" },
   ["Steady Shot"]           = { key = "1" },
   ["Explosive Shot"]        = { key = "4" },
@@ -69,14 +69,14 @@ Binder.hunter["survival_keybinds"] = {
   ["Black Arrow"]           = { key = "E" },
 }
 
-Binder.hunter["marksman_keybinds"] = {
+Binder.hunter["marksman keybinds"] = {
   ["Aimed Shot"]            = { key = "`" },
   ["Chimera Shot"]          = { key = "4" },
   ["Readiness"]             = { key = "C" },
   ["Silencing Shot"]        = { key = "E" },
 }
 
-Binder.hunter["beastmaster_keybinds"] = {
+Binder.hunter["beastmaster keybinds"] = {
   ["Intimidation"]          = { key = "`" },
   ["Focus Fire"]            = { key = "4" },
   ["Fervor"]                = { key = "C" },

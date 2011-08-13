@@ -96,6 +96,7 @@ function Binder:WhoAmI()
   self.race = string.lower(race)
   local _, class = UnitClass("player")
   self.class = string.lower(class)
+  self.talent = "no talent"
   local talent_group = GetActiveTalentGroup()
   local talent_tree = GetPrimaryTalentTree(false, false, talent_group)
   if talent_tree then
@@ -103,8 +104,6 @@ function Binder:WhoAmI()
     if talent then
       self.talent = string.lower(talent)
     end
-  else
-    self.talent = "no talent"
   end
 
   return { self.race, self.class, self.talent }

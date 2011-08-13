@@ -20,13 +20,6 @@ Binder.druid["macros"] = {
   ["Wild Mushroom"]         = "/cast !Wild Mushroom",
   ["Force of Nature"]       = "/cast !Force of Nature",
 
-  -- Feral macros
-  ["Mangle"]                = "/startattack\n/cast [stance:1] Mangle(Bear Form); [stance:3] Mangle(Cat Form); !Bear Form",
-  ["Rake"]                  = "/startattack\n/cast [stance:1] Lacerate; [stance:3] Rake; !Bear Form",
-  ["Thrash"]                = "/startattack\n/cast [stance:1] Thrash; [stance:3] Rip; !Bear Form",
-  ["Pulverize"]             = "/startattack\n/cast [stance:1] Pulverize; [stance:3] Ferocious Bite; !Bear Form",
-  ["Feral Charge"]          = "/cast [stance:1] Feral Charge(Bear Form); [stance:3] Feral Charge(Cat Form); !Bear Form",
-
   -- Restoration mouseover macros
   ["Lifebloom"]             = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Lifebloom",
   ["Rejuvenation"]          = "/cast [@mouseover,help,nodead][help][@player][] Rejuvenation",
@@ -118,9 +111,21 @@ Binder.druid["keybinds"] = {
   ["Revive"]                  = { key = m2.."L" },
 }
 
+Binder.druid["feral combat macros"] = {
+  -- Feral macros
+  ["Mangle"]                = "/startattack\n/cast [stance:1] Mangle(Bear Form); [stance:3] Mangle(Cat Form); !Bear Form",
+  ["Rake"]                  = "/startattack\n/cast [stance:1] Lacerate; [stance:3] Rake; !Bear Form",
+  ["Thrash"]                = "/startattack\n/cast [stance:1] Thrash; [stance:3] Rip; !Bear Form",
+  ["Pulverize"]             = "/startattack\n/cast [stance:1] Pulverize; [stance:3] Ferocious Bite; !Bear Form",
+  ["Maul"]                  = "/startattack\n/cast [stance:1] Maul; [stance:3] Shred; !Bear Form",
+  ["Feral Charge"]          = "/cast [stance:1] Feral Charge(Bear Form); [stance:3] Feral Charge(Cat Form); !Bear Form",
+}
 Binder.druid["feral combat keybinds"] = {
+  ["Mangle"]                  = { key = "1" },
+  ["Pulverize"]               = { key = "2" },
   ["Wrath"]                   = { key = "=" },
   ["Ravage"]                  = { key = "Q" },
+  ["Skull Bash"]              = { key = "E" },
   ["Maul"]                    = { key = "R" },
   ["Swipe"]                   = { key = "X" },
   ["Moonfire"]                = { key = m1.."C" },

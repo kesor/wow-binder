@@ -93,7 +93,7 @@ Binder.druid["keybinds"] = {
   -- m2+Q: Berserk / Tree of Life / Moonkin Form
   -- m2+W: Life (healthstone/potion)
   -- m2+E: Savage Roar / Nature's Swiftness / Typhoon
-  -- m2+R: Enrage / NAture's Swiftness / Solar Beam
+  -- m2+R: Enrage / Nature's Swiftness / Solar Beam
   ["Wild Mushroom: Detonate"] = { key = m2.."T" },
 
   ["Prowl"]                   = { key = m2.."A" },
@@ -118,6 +118,7 @@ Binder.druid["feral combat macros"] = {
   ["Thrash"]                = "/startattack\n/cast [stance:1] Thrash; [stance:3] Rip; !Bear Form",
   ["Pulverize"]             = "/startattack\n/cast [stance:1] Pulverize; [stance:3] Ferocious Bite; !Bear Form",
   ["Maul"]                  = "/startattack\n/cast [stance:1] Maul; [stance:3] Shred; !Bear Form",
+  ["Enrage"]                = "/cast [stance:1] Enrage; [stance:3] Tiger's Fury; !Bear Form",
   ["Feral Charge"]          = "/cast [stance:1] Feral Charge(Bear Form); [stance:3] Feral Charge(Cat Form); !Bear Form",
 }
 Binder.druid["feral combat keybinds"] = {

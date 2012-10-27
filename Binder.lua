@@ -97,12 +97,12 @@ function Binder:WhoAmI()
   local _, class = UnitClass("player")
   self.class = string.lower(class)
   self.talent = "no talent"
-  local talent_group = GetActiveTalentGroup()
-  local talent_tree = GetPrimaryTalentTree(false, false, talent_group)
+  local talent_group = GetActiveSpecGroup()
+  local talent_tree = GetSpecialization(false, false, talent_group)
   if talent_tree then
-    local _, talent = GetTalentTabInfo(talent_tree)
-    if talent then
-      self.talent = string.lower(talent)
+    local id, name, description, talent, icon, background, role = GetSpecializationInfo(talent_tree)
+    if name then
+      self.talent = string.lower(name)
     end
   end
 
@@ -111,7 +111,6 @@ end
 
 function Binder:init()
   self.eventframe = CreateFrame("Frame", eframe, UIParent)
-  -- self.widget : a button widget that saves the macro bindings on itself
   self.widget = CreateFrame("Button", bframe, UIParent, "SecureActionButtonTemplate")
   self.eventframe:RegisterEvent("PLAYER_ALIVE")
   self.eventframe:RegisterEvent("VARIABLES_LOADED")
@@ -133,4 +132,3 @@ end
 
 Binder:init()
 Binder.init = nil
-

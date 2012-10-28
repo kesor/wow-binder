@@ -8,7 +8,7 @@ Binder.global = {}
 Binder.global["macros"] = {
   ["PVPTRINKET"]     = "/use 14",
   ["MOUNT"]          = "/click GoGoButton",
-  ["BANDAID"]        = "#showtooltip Dense Embersilk Bandage\n/use [@player] Dense Embersilk Bandage",
+  ["BANDAID"]        = "#showtooltip Heavy Windwool Bandage\n/use [@player] Heavy Windwool Bandage",
   ["Pet Move"]       = "/petmoveto",
   ["LIVE"]           = "/use Healthstone",
 }

@@ -14,4 +14,5 @@ Rogue.lua
 Shaman.lua
 Warlock.lua
 Warrior.lua
+Monk.lua
 Binder.lua

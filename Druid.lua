@@ -34,7 +34,7 @@ Binder.druid["macros"] = {
   ["Remove Corruption"]     = "/cast [@mouseover,help,nodead][help][@player][] Remove Corruption",
 
   -- Moonkin macros
-  ["Insect Swarm"]          = "/cast [harm,nodead][@targettarget,harm,nodead][] Insect Swarm",
+  ["Sunfire"]               = "/cast [harm,nodead][@targettarget,harm,nodead][] Sunfire",
   ["Moonfire"]              = "/cast [harm,nodead][@targettarget,harm,nodead][] Moonfire",
   ["Starfire"]              = "/cast [harm,nodead][@targettarget,harm,nodead][] Starfire",
   ["Wrath"]                 = "/cast [harm,nodead][@targettarget,harm,nodead][] Wrath",
@@ -97,7 +97,7 @@ Binder.druid["keybinds"] = {
   ["Wild Mushroom: Detonate"] = { key = m2.."T" },
 
   ["Prowl"]                   = { key = m2.."A" },
-  ["Insect Swarm"]            = { key = m2.."S" },
+  ["Sunfire"]                 = { key = m2.."S" },
   ["Moonfire"]                = { key = m2.."D" },
   ["Nature's Grasp"]          = { key = m2.."F" },
   ["Wild Mushroom"]           = { key = m2.."G" },

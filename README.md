@@ -12,3 +12,8 @@ Note:
 - Current up-to-date with Cataclysm abilities.
 - Small fixes for Balance Druid bring it up to Pandaria, but not completely.
 
+Pull requests are welcome, please help bring it up to date with current
+abilities.
+
+
+BSD license detailed in the LICENSE file.

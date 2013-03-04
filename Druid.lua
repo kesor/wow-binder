@@ -8,7 +8,6 @@ Binder.druid = {}
 Binder.druid["macros"] = {
   ["Frenzied Regeneration"] = "/cast [stance:1] Frenzied Regeneration; !Bear Form",
   ["Demoralizing Roar"]     = "/cast [stance:1] Demoralizing Roar; !Bear Form",
-  ["Faerie Fire"]           = "/cast [nostance] Faerie Fire\n/cast [stance:1/3] Faerie Fire (Feral)\n/cast [stance:2/4/5/6] Faerie Fire",
   ["Dash"]                  = "/cast [stance:3] Dash; !Cat Form",
   ["Stampeding Roar"]       = "/cast [stance:1] Stampeding Roar(Bear Form); [stance:3] Stampeding Roar(Cat Form); !Bear Form",
   ["Maim"]                  = "/startattack\n/cast [stance:3] Maim; !Cat Form",
@@ -111,9 +110,9 @@ Binder.druid["keybinds"] = {
   ["Revive"]                  = { key = m2.."L" },
 }
 
-Binder.druid["feral combat macros"] = {
+Binder.druid["feral macros"] = {
   -- Feral macros
-  ["Mangle"]                = "/startattack\n/cast [stance:1] Mangle(Bear Form); [stance:3] Mangle(Cat Form); !Bear Form",
+  ["Mangle"]                = "/startattack\n/cast [stance:1] Maul; [stance:3] Mangle; !Bear Form",
   ["Rake"]                  = "/startattack\n/cast [stance:1] Lacerate; [stance:3] Rake; !Bear Form",
   ["Thrash"]                = "/startattack\n/cast [stance:1] Thrash; [stance:3] Rip; !Bear Form",
   ["Pulverize"]             = "/startattack\n/cast [stance:1] Pulverize; [stance:3] Ferocious Bite; !Bear Form",
@@ -121,7 +120,7 @@ Binder.druid["feral combat macros"] = {
   ["Enrage"]                = "/cast [stance:1] Enrage; [stance:3] Tiger's Fury; !Bear Form",
   ["Feral Charge"]          = "/cast [stance:1] Feral Charge(Bear Form); [stance:3] Feral Charge(Cat Form); !Bear Form",
 }
-Binder.druid["feral combat keybinds"] = {
+Binder.druid["feral keybinds"] = {
   ["Mangle"]                  = { key = "1" },
   ["Pulverize"]               = { key = "2" },
   ["Wrath"]                   = { key = "=" },

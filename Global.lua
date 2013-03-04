@@ -45,10 +45,12 @@ Binder.global["keybinds"] = {
   ["ALT-4"]                = "ACTIONBUTTON4",
   ["ALT-5"]                = "ACTIONBUTTON5",
   ["ALT-6"]                = "ACTIONBUTTON6",
+  -- don't change toolbars!
   ["SHIFT-UP"]             = "NONE",
   ["SHIFT-DOWN"]           = "NONE",
   ["SHIFT-MOUSEWHEELUP"]   = "NONE",
   ["SHIFT-MOUSEWHEELDOWN"] = "NONE",
+  --
   ["W"]                    = "MOVEFORWARD",
   ["S"]                    = "MOVEBACKWARD",
   ["A"]                    = "STRAFELEFT",

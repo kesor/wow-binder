@@ -14,6 +14,8 @@ Binder.global["macros"] = {
 }
 
 Binder.global["macro_keybinds"] = {
+  ["Pet Attack"]     = { key = m1.."1" },
+  ["Pet Stay"]       = { key = m1.."2" },
   ["Pet Move"]       = { key = m1.."3" },
   ["MOUNT"]          = { key = "Y" },
   ["BANDAID"]        = { key = "J" },

@@ -114,6 +114,7 @@ function Binder:init()
   self.widget = CreateFrame("Button", bframe, UIParent, "SecureActionButtonTemplate")
   self.eventframe:RegisterEvent("PLAYER_ALIVE")
   self.eventframe:RegisterEvent("VARIABLES_LOADED")
+  self.eventframe:RegisterEvent("PLAYER_LEVEL_UP")
 
   self.eventframe:SetScript("OnEvent",
     function(...)

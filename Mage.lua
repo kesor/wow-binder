@@ -32,6 +32,7 @@ Binder.mage["keybinds"] = {
   ["Mirror Image"]          = { key = "V" },
   ["Fireball"]              = { key = "X" },
   ["Cone of Cold"]          = { key = "Z" },
+
   ["Blizzard"]              = { key = m1.."4" },
   ["Frost Armor"]           = { key = m1.."E" },
   ["Flamestrike"]           = { key = m1.."F" },
@@ -41,6 +42,7 @@ Binder.mage["keybinds"] = {
   ["Mana Gem"]              = { key = m1.."S" },
   ["Blazing Speed"]         = { key = m1.."T" },
   ["Ritual of Refreshment"] = { key = m1.."W" },
+
   ["Remove Curse"]          = { key = m2.."2" },
   ["Arcane Explosion"]      = { key = m2.."4" },
   ["Slow Fall"]             = { key = m2.."5" },
@@ -66,9 +68,10 @@ Binder.mage["frost keybinds"] = {
   ["Icy Veins"]              = { key = m2.."3" },
   ["Summon Water Elemental"] = { key = m2.."L" },
   ["Ice Barrier"]            = { key = m2.."Z" },
+  ["Ice Ward"]               = { key = m2.."S" },
 }
 
-local mageFireBindings = {
+Binder.mage["fire keybinds"] = {
   ["Dragon's Breath"]        = { key = "`" },
   ["Pyroblast"]              = { key = "4" },
   ["Living Bomb"]            = { key = "C" },
@@ -77,7 +80,7 @@ local mageFireBindings = {
   ["Scorch"]                 = { key = m2.."Z" },
 }
 
-local mageArcaneBindings = {
+Binder.mage["arcane keybinds"] = {
   ["Slow"]                   = { key = "`" },
   ["Arcane Barrage"]         = { key = "4" },
   ["POM POLY"]               = { key = "C" },

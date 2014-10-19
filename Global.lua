@@ -7,7 +7,7 @@ Binder.global = {}
 
 Binder.global["macros"] = {
   ["PVPTRINKET"]     = "/use 14",
-  ["MOUNT"]          = "/click GoGoButton",
+  ["MOUNT"]          = "/run C_MountJournal.Summon(0)",
   ["BANDAID"]        = "#showtooltip Heavy Windwool Bandage\n/use [@player] Heavy Windwool Bandage",
   ["Pet Move"]       = "/petmoveto",
   ["LIVE"]           = "/use Healthstone",

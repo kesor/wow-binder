@@ -47,8 +47,8 @@ Binder.druid["macros"] = {
 
 Binder.druid["keybinds"] = {
   ["Bash"]                    = { key = "`" },
-  ["Wrath"]                   = { key = "1" },
-  ["Starfire"]                = { key = "2" },
+  ["Starfire"]                = { key = "1" },
+  ["Wrath"]                   = { key = "2" },
   ["Faerie Fire"]             = { key = "3" },
   ["Dash"]                    = { key = "4" },
   ["Demoralizing Roar"]       = { key = "5" },
@@ -100,7 +100,7 @@ Binder.druid["keybinds"] = {
   ["Moonfire"]                = { key = m2.."D" },
   ["Nature's Grasp"]          = { key = m2.."F" },
   ["Wild Mushroom"]           = { key = m2.."G" },
-  ["Swift Flight Form"]       = { key = m2.."H" },
+  ["Flight Form"]             = { key = m2.."H" },
 
   ["Barkskin"]                = { key = m2.."Z" },
   ["Frenzied Regeneration"]   = { key = m2.."X" },

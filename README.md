@@ -1,8 +1,5 @@
 World of Warcraft keybinding addon for each race/class/spec
 
-Dependencies:
-- GoGoMount addon for insta-mounting with the 'Y' key.
-
 Features:
 - Unlimited length macros
 - Similar (almost identical) positions of abilities for each race/class/spec

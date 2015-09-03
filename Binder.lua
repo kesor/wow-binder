@@ -131,5 +131,34 @@ function Binder:init()
   )
 end
 
+--
+-- used by BinderLabels addon
+--
+function Binder:GetKeyForAction(action)
+  -- racial
+  if (self.racial and self.racial[self.race] == action) then
+    return self.m1.."Z"
+  end
+  -- class
+  if (self[self.class] and self[self.class]['keybinds']) then
+    for spell, attrs in pairs(self[self.class]['keybinds']) do
+      if (spell == action) then
+        return attrs['key']
+      end
+    end
+  end
+  -- talent
+  if (self.talent and self[self.class][self.talent .. ' keybinds']) then
+    for spell, attrs in pairs(self[self.class][self.talent .. ' keybinds']) do
+      if (spell == action) then
+        return attrs['key']
+      end
+    end
+  end
+  return ""
+end
+
 Binder:init()
 Binder.init = nil
+
+_G["Binder"] = Binder

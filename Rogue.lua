@@ -16,6 +16,7 @@ Binder.rogue["macros"] = {
 
 Binder.rogue["keybinds"] = {
   ["Kidney Shot"]         = { key = "`" },
+  ["Sinister Strike"]     = { key = "1" },
   ["Ambush"]              = { key = "3" },
   ["Envenom"]             = { key = "4" },
   ["Deadly Throw"]        = { key = "5" },
@@ -52,9 +53,9 @@ Binder.rogue["keybinds"] = {
   ["Evasion"]             = { key = m2.."Z" },
 }
 
-Binder.rogue["subtelty keybinds"] = {
-  ["Backstab"]            = { key = "1" },
-  ["Hemorrhage"]          = { key = "2" },
+Binder.rogue["subtlety keybinds"] = {
+  ["Hemorrhage"]          = { key = "1" },
+  ["Backstab"]            = { key = "2" },
   ["Shadowstep"]          = { key = m1.."F" },
   ["Preparation"]         = { key = m2.."3" },
   ["Premeditation"]       = { key = m2.."G" },
@@ -62,7 +63,6 @@ Binder.rogue["subtelty keybinds"] = {
 }
 
 Binder.rogue["combat keybinds"] = {
-  ["Sinister Strike"]     = { key = "1" },
   ["Revealing Strike"]    = { key = "2" },
   ["Blade Flurry"]        = { key = m1.."F" },
   ["Killing Spree"]       = { key = m2.."3" },

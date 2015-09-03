@@ -24,7 +24,7 @@ Binder.mage["macros"] = {
 
 Binder.mage["keybinds"] = {
   ["Frostbolt"]             = { key = "1" },
-  ["Arcane Blast"]          = { key = "3" },
+--  ["Arcane Blast"]          = { key = "3" },
   ["Frostfire Bolt"]        = { key = "4" },
   ["Fire Blast"]            = { key = "5" },
   ["Scorch"]                = { key = "6" },

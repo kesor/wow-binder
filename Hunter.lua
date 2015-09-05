@@ -1,7 +1,7 @@
 local _, Binder = ...
 
-local m1 = Binder.m1 -- 'CTRL-'
-local m2 = Binder.m2 -- 'SHIFT-'
+local m1 = Binder.m1 -- Modifier.lua
+local m2 = Binder.m2 -- Modifier.lua
 
 Binder.hunter = {}
 

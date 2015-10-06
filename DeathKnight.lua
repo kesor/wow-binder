@@ -11,6 +11,9 @@ Binder.deathknight["macros"] = {
   ["Death and Decay"] = "#showtooltip Death and Decay\n/cast !Death and Decay",
   ["Horn of Winter"]  = "#showtooltip Horn of Winter\n/cancelaura Horn of Winter\n/cancelaura Battle Shout\n/cast Horn of Winter",
   ["Scourge Strike"]  = "#showtooltip Scourge Strike\n/startattack\n/cast [@pettarget,nodead,harm][] Claw\n/cast Scourge Strike",
+  ["Strangulate"]     = "#showtooltip\n/cast [@mouseover,nodead,harm][] Strangulate\n/cast [@mouseover,nodead,harm][] Asphyxiate",
+  ["Chains of Ice"]   = "#showtooltip Chains of Ice\n/cast [@mouseover,nodead,harm][] Chains of Ice",
+  ["Dark Command"]    = "#showtooltip Dark Command\n/cast [@mouseover,nodead,harm][] Dark Command",
 }
 
 Binder.deathknight["keybinds"] = {
@@ -19,6 +22,7 @@ Binder.deathknight["keybinds"] = {
   ["Dark Command"]        = { key = "6" },
   ["Death Grip"]          = { key = "C" },
   ["Mind Freeze"]         = { key = "E" },
+  ["Asphyxiate"]          = { key = "F" },
   ["Strangulate"]         = { key = "F" },
   ["Army of the Dead"]    = { key = "H" },
   ["Blood Tap"]           = { key = "Q" },

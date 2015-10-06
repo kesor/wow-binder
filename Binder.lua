@@ -8,6 +8,9 @@ SLASH_UI_ERRORS_ON1 = "/erron"
 SLASH_UI_ERRORS_OFF1 = "/erroff"
 
 function Binder:MapMacro(macro_name, macro_body)
+  if InCombatLockdown() then
+    return
+  end
   -- creates a button attribute for a macro
   -- later can be used in /click or a CLICK bind
   local bname = "b" .. string.gsub(macro_name, " ", "_")
@@ -34,6 +37,11 @@ function Binder:LoadMacros()
 end
 
 function Binder:MapKey(key, action)
+
+  -- SetOverrideBinding is protected during combat
+  if InCombatLockdown() then
+    return
+  end
 
   local bname = "b" .. string.gsub(action, " ", "_")
   if self.widget:GetAttribute("type-"..bname) == "macro" then

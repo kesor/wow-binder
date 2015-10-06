@@ -7,18 +7,24 @@ Binder.mage = {}
 
 Binder.mage["macros"] = {
   ["Mana Gem"]         = "#showtooltip Mana Gem\n/use Mana Gem",
-  ["Counterspell"]     = "#showtooltip Counterspell\n/stopcasting\n/cast Counterspell",
+  ["Counterspell"]     = "#showtooltip Counterspell\n/cast [@focus,exists][] Counterspell",
+  ["Spellsteal"]       = "#showtooltip Spellsteal\n/cast [@focus,exists][] Spellsteal",
   ["Blizzard"]         = "#showtooltip Blizzard\n/cast !Blizzard",
+  ["Blink"]            = "#showtooltip Blink\n/cast Blink",
+  ["Invisibility"]     = "#showtooltip Invisibility\n/cast Invisibility",
   ["Ring of Frost"]    = "#showtooltip Ring of Frost\n/cast !Ring of Frost",
   ["Flamestrike"]      = "#showtooltip Flamestrike\n/cast !Flamestrike",
+  ["Frostbolt"]        = "#showtooltip Frostbolt\n/cast Frostbolt\n/erron\n/cast Freeze\n/erroff",
+  ["Blazing Speed"]    = "#showtooltip\n/cast [talent:1/2] Blazing Speed; [talent:1/3] Ice Floes",
   ["POM POLY"]         = "#showtooltip Presence of Mind\n/cast Presence of Mind\n/cast Polymorph",
   ["POM ARCANE BLAST"] = "#showtooltip Presence of Mind\n/cast Presence of Mind\n/cast Arcane Blast",
-  ["Evocation"]        = "/cast Evocation\n/cast Rune of Power",
+  ["Evocation"]        = "#showtooltip Evocation\n/cast Evocation\n/cast Rune of Power",
   ["Blast Wave"]       = "#showtooltip Blast Wave\n/cast !Blast Wave",
   ["Cold Snap"]        = "#showtooltip Cold Snap\n/cast Icy Veins\n/cast Cold Snap",
+  ["Ice Block"]        = "#showtooltip Ice Block\n/cancelaura Ice Block\n/cast Ice Block",
   ["Pet Nova"]         = "#showtooltip Freeze\n/cast [pet] !Freeze\n/cast [nopet] summon Water Elemental",
-  ["Remove Curse"]     = "/cast [@mouseover,help,nodead][help][@player][] Remove Curse",
-  ["BOMB"]             = "#showtooltip\n/cast Ice Nova\n/cast Living Bomb\n/cast Frost Bomb",
+  ["Remove Curse"]     = "#showtooltip Remove Curse\n/cast [@mouseover,help,nodead][nodead,help][@player][] Remove Curse",
+  ["BOMB"]             = "#showtooltip Mage Bomb\n/cast [@mouseover,harm,exists,nodead] Mage Bomb; Mage Bomb",
   ["NOVA"]             = "#showtooltip\n/cast Frost Nova\n/cast Blast Wave\n/cast Supernova\n/cast Ice Nova",
 }
 

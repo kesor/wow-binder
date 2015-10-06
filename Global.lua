@@ -11,6 +11,7 @@ Binder.global["macros"] = {
   ["BANDAID"]        = "#showtooltip Heavy Windwool Bandage\n/use [@player] Heavy Windwool Bandage",
   ["Pet Move"]       = "/petmoveto",
   ["LIVE"]           = "/use Healthstone",
+  ["BinderTSM"]      = "/click TSMAuctioningPostButton\n/click TSMAuctioningCancelButton\n/click TSMCraftNextButton\n/click TSMDestroyButton\n/click TSMShoppingBuyoutButton\n/click TSMShoppingBuyoutConfirmationButton\n/click TSMShoppingCancelConfirmationButton\n/click TSMVendoringSellAllButton\n/click TSMShoppingBidConfirmationButton",
 }
 
 Binder.global["macro_keybinds"] = {
@@ -52,6 +53,10 @@ Binder.global["keybinds"] = {
   ["SHIFT-DOWN"]           = "NONE",
   ["SHIFT-MOUSEWHEELUP"]   = "NONE",
   ["SHIFT-MOUSEWHEELDOWN"] = "NONE",
+  --
+  -- TSM!
+  ["CTRL-MOUSEWHEELUP"]    = "BinderTSM",
+  ["CTRL-MOUSEWHEELDOWN"]  = "BinderTSM",
   --
   ["W"]                    = "MOVEFORWARD",
   ["S"]                    = "MOVEBACKWARD",

@@ -7,14 +7,14 @@ Binder.mage = {}
 
 Binder.mage["macros"] = {
   ["Mana Gem"]         = "#showtooltip Mana Gem\n/use Mana Gem",
-  ["Counterspell"]     = "#showtooltip Counterspell\n/cast [@focus,exists][] Counterspell",
-  ["Spellsteal"]       = "#showtooltip Spellsteal\n/cast [@focus,exists][] Spellsteal",
+  ["Counterspell"]     = "#showtooltip Counterspell\n/cast [@focus,exists][@mouserover,harm,nodead][] Counterspell",
+  ["Spellsteal"]       = "#showtooltip Spellsteal\n/cast [@focus,exists][][@mouseover,harm,nodead][] Spellsteal",
   ["Blizzard"]         = "#showtooltip Blizzard\n/cast !Blizzard",
   ["Blink"]            = "#showtooltip Blink\n/cast Blink",
   ["Invisibility"]     = "#showtooltip Invisibility\n/cast Invisibility",
   ["Ring of Frost"]    = "#showtooltip Ring of Frost\n/cast !Ring of Frost",
   ["Flamestrike"]      = "#showtooltip Flamestrike\n/cast !Flamestrike",
-  ["Frostbolt"]        = "#showtooltip Frostbolt\n/cast Frostbolt\n/erron\n/cast Freeze\n/erroff",
+  ["Frostbolt"]        = "#showtooltip Frostbolt\n/cast Frostbolt\n/cast Freeze",
   ["Blazing Speed"]    = "#showtooltip\n/cast [talent:1/2] Blazing Speed; [talent:1/3] Ice Floes",
   ["POM POLY"]         = "#showtooltip Presence of Mind\n/cast Presence of Mind\n/cast Polymorph",
   ["POM ARCANE BLAST"] = "#showtooltip Presence of Mind\n/cast Presence of Mind\n/cast Arcane Blast",

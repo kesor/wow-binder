@@ -12,6 +12,7 @@ Binder.global["macros"] = {
   ["Pet Move"]       = "/petmoveto",
   ["LIVE"]           = "/use Healthstone",
   ["BinderTSM"]      = "/click TSMAuctioningPostButton\n/click TSMAuctioningCancelButton\n/click TSMCraftNextButton\n/click TSMDestroyButton\n/click TSMShoppingBuyoutButton\n/click TSMShoppingBuyoutConfirmationButton\n/click TSMShoppingCancelConfirmationButton\n/click TSMVendoringSellAllButton\n/click TSMShoppingBidConfirmationButton",
+  ["Gift of the Naaru"] = "/cast [@mouseover,help,nodead][help][@player][] Gift of the Naaru",
 }
 
 Binder.global["macro_keybinds"] = {

@@ -5,6 +5,22 @@ local m2 = Binder.m2 -- Modifier.lua
 
 Binder.paladin = {}
 
+Binder.paladin["macros"] = {
+    [""] = "",
+    ["Flash of Light"]    = "/cast [@mouseover,help,nodead][help][@player][] Flash of Light",
+    ["Holy Shock"]        = "/cast [@mouseover,help,nodead][help][@player][] Holy Shock",
+    ["Lay on Hands"]      = "/cast [@mouseover,help,nodead][help][@player][] Lay on Hands",
+    ["Holy Radiance"]     = "/cast [@mouseover,help,nodead][help][@player][] Holy Radiance",
+    ["Holy Light"]        = "/cast [@mouseover,help,nodead][help][@player][] Holy Light",
+    ["Light of Dawn"]     = "/cast [@mouseover,help,nodead][help][@player][] Light of Dawn",
+    -- dispells / remove curses
+    ["Cleanse"]           = "/cast [@mouseover,help,nodead][help][@player][] Cleanse",
+    -- keep on tank macro
+    ["Beacon Of Light"]   = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Beacon Of Light",
+    -- ressurect macro
+    ["Redemption"]        = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead] Redemption",
+}
+
 Binder.paladin["keybinds"] = {
   ["Hammer of Justice"]         = { key = "`" },
   ["Crusader Strike"]           = { key = "2" },
@@ -65,7 +81,7 @@ Binder.paladin["protection keybinds"] = {
   ["Divine Guardian"]           = { key = m1.."F" },
 }
 
-Binder.paladin["holy bindings"] = {
+Binder.paladin["holy keybinds"] = {
   ["Exorcism"]                  = { key = "1" },
   ["Divine Favor"]              = { key = "3" },
   ["Beacon of Light"]           = { key = "5" },

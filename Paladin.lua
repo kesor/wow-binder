@@ -7,18 +7,20 @@ Binder.paladin = {}
 
 Binder.paladin["macros"] = {
     [""] = "",
-    ["Flash of Light"]    = "/cast [@mouseover,help,nodead][help][@player][] Flash of Light",
-    ["Holy Shock"]        = "/cast [@mouseover,help,nodead][help][@player][] Holy Shock",
-    ["Lay on Hands"]      = "/cast [@mouseover,help,nodead][help][@player][] Lay on Hands",
-    ["Holy Radiance"]     = "/cast [@mouseover,help,nodead][help][@player][] Holy Radiance",
-    ["Holy Light"]        = "/cast [@mouseover,help,nodead][help][@player][] Holy Light",
-    ["Light of Dawn"]     = "/cast [@mouseover,help,nodead][help][@player][] Light of Dawn",
+    ["Flash of Light"]    = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Flash of Light",
+    ["Holy Shock"]        = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Holy Shock",
+    ["Lay on Hands"]      = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Lay on Hands",
+    ["Holy Radiance"]     = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Holy Radiance",
+    ["Holy Light"]        = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Holy Light",
+    ["Light of Dawn"]     = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Light of Dawn",
     -- dispells / remove curses
-    ["Cleanse"]           = "/cast [@mouseover,help,nodead][help][@player][] Cleanse",
+    ["Cleanse"]           = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Cleanse",
     -- keep on tank macro
     ["Beacon Of Light"]   = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Beacon Of Light",
     -- ressurect macro
     ["Redemption"]        = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead] Redemption",
+    -- interrupt macro
+    ["Rebuke"]            = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Rebuke",
 }
 
 Binder.paladin["keybinds"] = {
@@ -34,7 +36,7 @@ Binder.paladin["keybinds"] = {
   ["Flash of Light"]            = { key = "V" },
   ["Holy Light"]                = { key = "X" },
   ["Seal of Justice"]           = { key = "Z" },
-  ["Holy Wrath"]                = { key = m1.."4" },
+  ["Denounce"]                  = { key = m1.."4" },
   ["Seal of Righteousness"]     = { key = m1.."A" },
   ["Crusader Aura"]             = { key = m1.."C" },
   ["Righteous Fury"]            = { key = m1.."E" },

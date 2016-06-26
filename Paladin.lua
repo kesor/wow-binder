@@ -13,12 +13,13 @@ Binder.paladin["macros"] = {
     ["Holy Radiance"]     = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Holy Radiance",
     ["Holy Light"]        = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Holy Light",
     ["Light of Dawn"]     = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Light of Dawn",
+    ["Divine Protection"] = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Divine Protection",
     -- dispells / remove curses
     ["Cleanse"]           = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Cleanse",
     -- keep on tank macro
     ["Beacon Of Light"]   = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Beacon Of Light",
     -- ressurect macro
-    ["Redemption"]        = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead] Redemption",
+    ["Redemption"]        = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Redemption",
     -- interrupt macro
     ["Rebuke"]            = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Rebuke",
 }
@@ -26,11 +27,12 @@ Binder.paladin["macros"] = {
 Binder.paladin["keybinds"] = {
   ["Hammer of Justice"]         = { key = "`" },
   ["Crusader Strike"]           = { key = "2" },
-  ["Judgement"]                 = { key = "4" },
+  ["Judgment"]                  = { key = "4" },
   ["Hand of Reckoning"]         = { key = "6" },
   ["Divine Light"]              = { key = "C" },
   ["Rebuke"]                    = { key = "E" },
   ["Holy Radiance"]             = { key = "H" },
+  ["Repentance"]                = { key = "F" },
   ["Word of Glory"]             = { key = "Q" },
   ["Hand of Freedom"]           = { key = "T" },
   ["Flash of Light"]            = { key = "V" },
@@ -70,7 +72,6 @@ Binder.paladin["keybinds"] = {
 Binder.paladin["retribution keybinds"] = {
   ["Exorcism"]                  = { key = "1" },
   ["Divine Storm"]              = { key = "3" },
-  ["Repentance"]                = { key = "F" },
   ["Templar's Verdict"]         = { key = "R" },
   ["Zealotry"]                  = { key = m1.."F" },
 }

@@ -35,8 +35,8 @@ Binder.druid["macros"] = {
   -- Moonkin macros
   ["Sunfire"]               = "/cast [harm,nodead][@targettarget,harm,nodead][] Sunfire",
   ["Moonfire"]              = "/cast [harm,nodead][@targettarget,harm,nodead][] Moonfire",
-  ["Starfire"]              = "/cast [harm,nodead][@targettarget,harm,nodead][] Starfire",
-  ["Wrath"]                 = "/cast [harm,nodead][@targettarget,harm,nodead][] Wrath",
+  ["Lunar Strike"]          = "/cast [harm,nodead][@targettarget,harm,nodead][] Lunar Strike",
+  ["Solar Wrath"]           = "/cast [harm,nodead][@targettarget,harm,nodead][] Solar Wrath",
   ["Entangling Roots"]      = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Entangling Roots",
   ["Solar Beam"]            = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Solar Beam",
 
@@ -47,9 +47,11 @@ Binder.druid["macros"] = {
 
 Binder.druid["keybinds"] = {
   ["Bash"]                    = { key = "`" },
-  ["Starfire"]                = { key = "1" },
-  ["Wrath"]                   = { key = "2" },
-  ["Faerie Fire"]             = { key = "3" },
+  ["Lunar Strike"]            = { key = "1" },
+  ["Solar Wrath"]             = { key = "2" },
+  -- ["Faerie Fire"]             = { key = "3" },
+  ["Sunfire"]                 = { key = "3" },
+  ["Moonfire"]                = { key = "3" },
   ["Dash"]                    = { key = "4" },
   ["Demoralizing Roar"]       = { key = "5" },
   ["Growl"]                   = { key = "6" },
@@ -98,6 +100,7 @@ Binder.druid["keybinds"] = {
   ["Prowl"]                   = { key = m2.."A" },
   ["Sunfire"]                 = { key = m2.."S" },
   ["Moonfire"]                = { key = m2.."D" },
+  ["Sunfire"]                 = { key = m2.."D" },
   ["Nature's Grasp"]          = { key = m2.."F" },
   ["Wild Mushroom"]           = { key = m2.."G" },
   ["Flight Form"]             = { key = m2.."H" },

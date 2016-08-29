@@ -104,11 +104,12 @@ function Binder:WhoAmI()
   self.race = string.lower(race)
   local _, class = UnitClass("player")
   self.class = string.lower(class)
+
   self.talent = "no talent"
-  local talent_group = GetActiveSpecGroup()
+  local talent_group = GetActiveSpecGroup(false)
   local talent_tree = GetSpecialization(false, false, talent_group)
   if talent_tree then
-    local id, name, description, talent, icon, background, role = GetSpecializationInfo(talent_tree)
+    local _, name, description, icon = GetSpecializationInfo(talent_tree, false, false, nil, UnitSex("player"))
     if name then
       self.talent = string.lower(name)
     end
@@ -119,19 +120,21 @@ end
 
 function Binder:init()
   self.eventframe = CreateFrame("Frame", eframe, UIParent)
+  self.eventframe:UnregisterAllEvents()
+
   self.widget = CreateFrame("Button", bframe, UIParent, "SecureActionButtonTemplate")
-  self.eventframe:RegisterEvent("PLAYER_ALIVE")
-  self.eventframe:RegisterEvent("VARIABLES_LOADED")
   self.eventframe:RegisterEvent("PLAYER_LEVEL_UP")
+  self.eventframe:RegisterEvent("PLAYER_TALENT_UPDATE") -- used instead of VARIABLES_LOADED
 
   self.eventframe:SetScript("OnEvent",
-    function(...)
-      if not self.already_loaded and event == 'VARIABLES_LOADED' then
+    function(x, event, ...)
+      local old_talent = self.talent
+      self:WhoAmI()
+      if (self.talent == old_talent and event == 'PLAYER_TALENT_UPDATE') then
         return
       end
-      self:WhoAmI()
       local whoami = self.race .. ' ' .. self.class .. ' ' .. self.talent
-      print("Loading Binder for: " .. whoami)
+      print("Loading Binder for " .. whoami)
       self:LoadMacros()
       self:LoadKeys()
       self.already_loaded = true

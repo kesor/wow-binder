@@ -28,8 +28,8 @@ Binder.druid["macros"] = {
   ["Swiftmend"]             = "/cast [@mouseover,help,nodead][help][@player][] Swiftmend",
   ["Healing Touch"]         = "/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
   -- ["Nature's Swiftness"]    = "/cast Nature's Swiftness\n/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
-  ["Revive"]                = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead] Rebirth",
-  ["Rebirth"]               = "/cast [@mouseover,help,dead,combat][help,dead,combat] Rebirth",
+  ["Revive"]                = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead][combat] Rebirth",
+  ["Rebirth"]               = "/cast [@mouseover,help,dead,combat][help,dead,combat] Rebirth\n/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive",
   ["Remove Corruption"]     = "/cast [@mouseover,help,nodead][help][@player][] Remove Corruption",
 
   -- Moonkin macros

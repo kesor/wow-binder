@@ -8,6 +8,7 @@ Binder.monk = {}
 Binder.monk["macros"] = {
 }
 Binder.monk["keybinds"] = {
+    ["Tiger Palm"] = { key = "2" },
 }
 Binder.monk["brewmaster macros"] = {
 }
@@ -19,7 +20,7 @@ Binder.monk["windwalker keybinds"] = {
 -- Class Abilities:
 -- - Stance of the Fierce Tiger
 -- - Jab
--- - Tiget Palm
+-- - Tiger Palm
 -- - Roll
 -- - Blackout Kick
 -- - Provoke

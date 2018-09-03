@@ -38,6 +38,7 @@ Binder.racial = {
   ["goblin"]    = "Rocket Jump",
   ["human"]     = "Every Man for Himself",
   ["bloodelf"]  = "Arcane Torrent",
+  ["pandaren"]  = "Quaking Palm",
 }
 
 -- all the possible options are here:

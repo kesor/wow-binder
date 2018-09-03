@@ -26,19 +26,25 @@ Binder.global["macro_keybinds"] = {
 }
 
 Binder.racial = {
-  ["gnome"]     = "Escape Artist",
-  ["nightelf"]  = "Shadowmeld",
-  ["orc"]       = "Blood Fury",
-  ["dwarf"]     = "Stoneform",
-  ["tauren"]    = "War Stomp",
-  ["troll"]     = "Berserking",
-  ["draenei"]   = "Gift of the Naaru",
-  ["worgen"]    = "Darkflight",
-  ["scourge"]   = "Will of the Forsaken",
-  ["goblin"]    = "Rocket Jump",
-  ["human"]     = "Every Man for Himself",
-  ["bloodelf"]  = "Arcane Torrent",
-  ["pandaren"]  = "Quaking Palm",
+  ["gnome"]              = "Escape Artist",
+  ["nightelf"]           = "Shadowmeld",
+  ["orc"]                = "Blood Fury",
+  ["dwarf"]              = "Stoneform",
+  ["tauren"]             = "War Stomp",
+  ["troll"]              = "Berserking",
+  ["draenei"]            = "Gift of the Naaru",
+  ["worgen"]             = "Darkflight",
+  ["scourge"]            = "Will of the Forsaken",
+  ["goblin"]             = "Rocket Jump",
+  ["human"]              = "Every Man for Himself",
+  ["bloodelf"]           = "Arcane Torrent",
+  ["pandaren"]           = "Quaking Palm",
+  ["nightborne"]         = "Arcane Pulse",
+  ["highmountaintauren"] = "Bull Rush",
+  ["lightforgeddraenei"] = "Light's Judgment",
+  ["voidelf"]            = "Spatial Rift",
+  ["magharorc"]          = "Ancestral Call",
+  ["darkirondwarf"]      = "Fireblood"
 }
 
 -- all the possible options are here:

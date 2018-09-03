@@ -10,8 +10,10 @@ Binder.global["macros"] = {
   ["MOUNT"]          = "/run C_MountJournal.SummonByID(0)",
   ["BANDAID"]        = "#showtooltip Heavy Windwool Bandage\n/use [@player] Heavy Windwool Bandage",
   ["Pet Move"]       = "/petmoveto",
-  ["LIVE"]           = "/use Healthstone",
+  ["Healthstone"]    = "/use Healthstone",
   ["BinderTSM"]      = "/click TSMAuctioningPostButton\n/click TSMAuctioningCancelButton\n/click TSMCraftNextButton\n/click TSMDestroyButton\n/click TSMShoppingBuyoutButton\n/click TSMShoppingBuyoutConfirmationButton\n/click TSMShoppingCancelConfirmationButton\n/click TSMVendoringSellAllButton\n/click TSMShoppingBidConfirmationButton",
+  ["TSMMacro"]       = "/click TSMCancelAuctionBtn\n/click TSMDestroyBtn\n/click TSMShoppingBuyoutBtn\n/click TSMSniperBtn\n/click TSMAuctioningBtn\n/click TSMVendoringSellAllButton\n/click TSMCraftingBtn",
+
   ["Gift of the Naaru"] = "/cast [@mouseover,help,nodead][help][@player][] Gift of the Naaru",
 }
 
@@ -22,7 +24,7 @@ Binder.global["macro_keybinds"] = {
   ["MOUNT"]          = { key = "Y" },
   ["BANDAID"]        = { key = "J" },
   ["PVPTRINKET"]     = { key = "G" },
-  ["LIVE"]           = { key = m2.."W" },
+  ["Healthstone"]    = { key = m2.."W" },
 }
 
 Binder.racial = {
@@ -63,11 +65,11 @@ Binder.global["keybinds"] = {
   ["SHIFT-MOUSEWHEELDOWN"] = "NONE",
   --
   -- TSM!
-  ["CTRL-MOUSEWHEELUP"]    = "BinderTSM",
-  ["CTRL-MOUSEWHEELDOWN"]  = "BinderTSM",
+  ["CTRL-MOUSEWHEELUP"]    = "TSMMacro",
+  ["CTRL-MOUSEWHEELDOWN"]  = "TSMMacro",
   --
   ["W"]                    = "MOVEFORWARD",
-  ["S"]                    = "MOVEBACKWARD",
+  -- ["S"]                    = "MOVEBACKWARD",
   ["A"]                    = "STRAFELEFT",
   ["D"]                    = "STRAFERIGHT",
   ["UP"]                   = "MOVEFORWARD",
@@ -80,12 +82,12 @@ Binder.global["keybinds"] = {
   ["U"]                    = "FOCUSTARGET",
   -- ["B"]                    = "TOGGLEBACKPACK",
   -- ["SHIFT-B"]              = "TOGGLEBACKPACK",
-  ["MOUSEWHEELUP"]         = "CAMERAZOOMIN",
-  ["MOUSEWHEELDOWN"]       = "CAMERAZOOMOUT",
+  ["ALT-SHIFT-MOUSEWHEELUP"]         = "CAMERAZOOMIN",
+  ["ALT-SHIFT-MOUSEWHEELDOWN"]       = "CAMERAZOOMOUT",
   ["ALT-CTRL-W"]           = "TOGGLEAUTORUN",
-  [m1.."V"]                = "ALLNAMEPLATES",
-  [m2.."V"]                = "NAMEPLATES",
-  [m1..m2.."V"]            = "FRIENDNAMEPLATES",
+  -- [m1.."V"]                = "ALLNAMEPLATES",
+  -- [m2.."V"]                = "NAMEPLATES",
+  -- [m1..m2.."V"]            = "FRIENDNAMEPLATES",
 }
 
 Binder.global["modclicks"] = {

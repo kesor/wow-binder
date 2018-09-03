@@ -8,12 +8,12 @@ Binder.druid = {}
 Binder.druid["macros"] = {
   ["Frenzied Regeneration"] = "/cast [stance:1] Frenzied Regeneration; !Bear Form",
   ["Demoralizing Roar"]     = "/cast [stance:1] Demoralizing Roar; !Bear Form",
-  ["Dash"]                  = "/cast [stance:3] Dash; !Cat Form",
+  ["Dash"]                  = "/cast [stance:2] Dash; !Cat Form",
   ["Stampeding Roar"]       = "/cast [stance:1] Stampeding Roar(Bear Form); [stance:3] Stampeding Roar(Cat Form); !Bear Form",
   ["Maim"]                  = "/startattack\n/cast [stance:3] Maim; !Cat Form",
   ["Skull Bash"]            = "/cast [stance:1] Enrage\n/cast [stance:1] Skull Bash(Bear Form); [stance:3] Skull Bash(Cat Form); !Bear Form",
   ["Bash"]                  = "/cast Enrage\n/cast [stance:1] Bash; !Bear Form",
-  ["Prowl"]                 = "/cast [nostealth,stance:3] !Prowl; [stealth,stance:3] Pounce; !Cat Form",
+  ["Prowl"]                 = "/cast [nostealth,stance:2] !Prowl; [stealth,stance:2] Pounce; !Cat Form",
   ["Challenging Roar"]      = "/cast [stance:1] Challenging Roar; !Bear Form",
   ["Hurricane"]             = "/cast !Hurricane",
   ["Wild Mushroom"]         = "/cast !Wild Mushroom",
@@ -27,7 +27,7 @@ Binder.druid["macros"] = {
   ["Wild Growth"]           = "/cast [@mouseover,help,nodead][help][@player][] Wild Growth",
   ["Swiftmend"]             = "/cast [@mouseover,help,nodead][help][@player][] Swiftmend",
   ["Healing Touch"]         = "/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
-  ["Nature's Swiftness"]    = "/cast Nature's Swiftness\n/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
+  -- ["Nature's Swiftness"]    = "/cast Nature's Swiftness\n/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
   ["Revive"]                = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead] Rebirth",
   ["Rebirth"]               = "/cast [@mouseover,help,dead,combat][help,dead,combat] Rebirth",
   ["Remove Corruption"]     = "/cast [@mouseover,help,nodead][help][@player][] Remove Corruption",
@@ -50,8 +50,8 @@ Binder.druid["keybinds"] = {
   ["Lunar Strike"]            = { key = "1" },
   ["Solar Wrath"]             = { key = "2" },
   -- ["Faerie Fire"]             = { key = "3" },
-  ["Sunfire"]                 = { key = "3" },
-  ["Moonfire"]                = { key = "3" },
+  -- ["Sunfire"]                 = { key = "3" },
+  -- ["Moonfire"]                = { key = "3" },
   ["Dash"]                    = { key = "4" },
   ["Demoralizing Roar"]       = { key = "5" },
   ["Growl"]                   = { key = "6" },
@@ -99,10 +99,10 @@ Binder.druid["keybinds"] = {
 
   ["Prowl"]                   = { key = m2.."A" },
   ["Sunfire"]                 = { key = m2.."S" },
-  ["Moonfire"]                = { key = m2.."D" },
+  ["Moonfire"]                = { key = m2..m1.."D" },
   ["Sunfire"]                 = { key = m2.."D" },
   ["Nature's Grasp"]          = { key = m2.."F" },
-  ["Wild Mushroom"]           = { key = m2.."G" },
+  -- ["Wild Mushroom"]           = { key = m2.."G" },
   ["Flight Form"]             = { key = m2.."H" },
 
   ["Barkskin"]                = { key = m2.."Z" },
@@ -142,10 +142,12 @@ Binder.druid["feral keybinds"] = {
 }
 
 Binder.druid["restoration keybinds"] = {
-  ["Nature's Swiftness"]      = { key = m2.."R" },
   ["Swiftmend"]               = { key = "R" },
+  ["Cenarion Ward"]           = { key = m2.."R" },
+
+  -- ["Nature's Swiftness"]      = { key = m2.."R" },
+  -- ["Nature's Swiftness"]      = { key = m2.."E" },
   ["Wild Growth"]             = { key = m1.."F" },
-  ["Nature's Swiftness"]      = { key = m2.."E" },
   ["Tree of Life"]            = { key = m2.."Q" },
 }
 
@@ -157,3 +159,4 @@ Binder.druid["balance keybinds"] = {
   ["Moonkin Form"]            = { key = m2.."Q" },
   ["Solar Beam"]              = { key = m2.."R" },
 }
+

@@ -21,16 +21,18 @@ Binder.druid["macros"] = {
 
   -- Restoration mouseover macros
   ["Lifebloom"]             = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Lifebloom",
-  ["Rejuvenation"]          = "/cast [@mouseover,help,nodead][help][@player][] Rejuvenation",
-  ["Regrowth"]              = "/cast [@mouseover,help,nodead][help][@player][] Regrowth",
-  ["Nourish"]               = "/cast [@mouseover,help,nodead][help][@player][] Nourish",
-  ["Wild Growth"]           = "/cast [@mouseover,help,nodead][help][@player][] Wild Growth",
-  ["Swiftmend"]             = "/cast [@mouseover,help,nodead][help][@player][] Swiftmend",
-  ["Healing Touch"]         = "/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
+  ["Cenarion Ward"]         = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Cenarion Ward",
+  ["Rejuvenation"]          = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Rejuvenation",
+  ["Regrowth"]              = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Regrowth",
+  ["Nourish"]               = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Nourish",
+  ["Wild Growth"]           = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Wild Growth",
+  ["Swiftmend"]             = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Swiftmend",
+  ["Healing Touch"]         = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Healing Touch",
   -- ["Nature's Swiftness"]    = "/cast Nature's Swiftness\n/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
   ["Revive"]                = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead][combat] Rebirth",
   ["Rebirth"]               = "/cast [@mouseover,help,dead,combat][help,dead,combat] Rebirth\n/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive",
   ["Remove Corruption"]     = "/cast [@mouseover,help,nodead][help][@player][] Remove Corruption",
+  ["Nature's Cure"]         = "/cast [@mouseover,help,nodead][help][@player][] Nature's Cure",
 
   -- Moonkin macros
   ["Sunfire"]               = "/cast [harm,nodead][@targettarget,harm,nodead][] Sunfire",
@@ -144,6 +146,7 @@ Binder.druid["feral keybinds"] = {
 Binder.druid["restoration keybinds"] = {
   ["Swiftmend"]               = { key = "R" },
   ["Cenarion Ward"]           = { key = m2.."R" },
+  ["Nature's Cure"]           = { key = m2.."2" },
 
   -- ["Nature's Swiftness"]      = { key = m2.."R" },
   -- ["Nature's Swiftness"]      = { key = m2.."E" },

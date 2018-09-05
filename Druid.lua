@@ -16,34 +16,36 @@ Binder.druid["macros"] = {
   ["Prowl"]                 = "/cast [nostealth,stance:2] !Prowl; [stealth,stance:2] Pounce; !Cat Form",
   ["Challenging Roar"]      = "/cast [stance:1] Challenging Roar; !Bear Form",
   ["Hurricane"]             = "/cast !Hurricane",
-  ["Wild Mushroom"]         = "/cast !Wild Mushroom",
+  -- ["Wild Mushroom"]         = "/cast !Wild Mushroom",
   ["Force of Nature"]       = "/cast !Force of Nature",
 
   -- Restoration mouseover macros
-  ["Lifebloom"]             = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Lifebloom",
-  ["Cenarion Ward"]         = "/cast [@focus,help,nodead][@mouseover,help,nodead][help][@player][] Cenarion Ward",
+  -- Priority: First @mouseover, then @focus, then helpful target, then player
+  ["Lifebloom"]             = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Lifebloom",
+  ["Cenarion Ward"]         = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Cenarion Ward",
   ["Rejuvenation"]          = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Rejuvenation",
   ["Regrowth"]              = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Regrowth",
   ["Nourish"]               = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Nourish",
   ["Wild Growth"]           = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Wild Growth",
   ["Swiftmend"]             = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Swiftmend",
   ["Healing Touch"]         = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Healing Touch",
-  -- ["Nature's Swiftness"]    = "/cast Nature's Swiftness\n/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
+  ["Remove Corruption"]     = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Remove Corruption",
+  ["Nature's Cure"]         = "/cast [@mouseover,help,nodead][@focus,help,nodead][help][@player][] Nature's Cure",
   ["Revive"]                = "/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive\n/stopmacro [nocombat]\n/cast [@mouseover,dead][dead][combat] Rebirth",
   ["Rebirth"]               = "/cast [@mouseover,help,dead,combat][help,dead,combat] Rebirth\n/cast [@mouseover,help,dead,nocombat][dead,nocombat][nocombat] Revive",
-  ["Remove Corruption"]     = "/cast [@mouseover,help,nodead][help][@player][] Remove Corruption",
-  ["Nature's Cure"]         = "/cast [@mouseover,help,nodead][help][@player][] Nature's Cure",
+  -- ["Nature's Swiftness"]    = "/cast Nature's Swiftness\n/cast [@mouseover,help,nodead][help][@player][] Healing Touch",
 
   -- Moonkin macros
-  ["Sunfire"]               = "/cast [harm,nodead][@targettarget,harm,nodead][] Sunfire",
-  ["Moonfire"]              = "/cast [harm,nodead][@targettarget,harm,nodead][] Moonfire",
-  ["Lunar Strike"]          = "/cast [harm,nodead][@targettarget,harm,nodead][] Lunar Strike",
-  ["Solar Wrath"]           = "/cast [harm,nodead][@targettarget,harm,nodead][] Solar Wrath",
-  ["Entangling Roots"]      = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Entangling Roots",
-  ["Solar Beam"]            = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,nodead,harm][harm] Solar Beam",
+  ["Sunfire"]               = "/cast [harm,nodead][@focus,harm,nodead][@focustarget,harm,nodead][@targettarget,harm,nodead][] Sunfire",
+  ["Moonfire"]              = "/cast [harm,nodead][@focus,harm,nodead][@focustarget,harm,nodead][@targettarget,harm,nodead][] Moonfire",
+  ["Solar Wrath"]           = "/cast [harm,nodead][@focus,harm,nodead][@focustarget,harm,nodead][@targettarget,harm,nodead][] Solar Wrath",
+  ["Lunar Strike"]          = "/cast [harm,nodead][@focus,harm,nodead][@focustarget,harm,nodead][@targettarget,harm,nodead][] Lunar Strike",
+  ["Starsurge"]             = "/cast [harm,nodead][@focus,harm,nodead][@focustarget,harm,nodead][@targettarget,harm,nodead][] Starsurge",
+  ["Entangling Roots"]      = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,harm,nodead][harm] Entangling Roots",
+  ["Solar Beam"]            = "/stopcasting\n/cast [@mouseover,nodead,harm][@focus,harm,nodead][harm] Solar Beam",
 
   -- General useful macro
-  ["Mark of the Wild"]      = "/cast [@player] !Mark of the Wild",
+  -- ["Mark of the Wild"]      = "/cast [@player] !Mark of the Wild",
   ["Thorns"]                = "/cast [@player] !Thorns",
 }
 
@@ -57,7 +59,6 @@ Binder.druid["keybinds"] = {
   ["Dash"]                    = { key = "4" },
   ["Demoralizing Roar"]       = { key = "5" },
   ["Growl"]                   = { key = "6" },
-  ["Lifebloom"]               = { key = "Q" },
   ["Skull Bash"]              = { key = "E" },
   -- R: Starsurge / Maul / Swiftmend
   ["Travel Form"]             = { key = "T" },
@@ -65,7 +66,6 @@ Binder.druid["keybinds"] = {
   -- U: Focus
   ["Cyclone"]                 = { key = "F" },
   -- G: PvP Trinket
-  ["Tranquility"]             = { key = "H" },
   -- J: First Aid
   ["Entangling Roots"]        = { key = "Z" },
   ["Nourish"]                 = { key = "X" },
@@ -109,10 +109,14 @@ Binder.druid["keybinds"] = {
 
   ["Barkskin"]                = { key = m2.."Z" },
   ["Frenzied Regeneration"]   = { key = m2.."X" },
-  ["Rejuvenation"]            = { key = m2.."C" },
   ["Maim"]                    = { key = m2.."V" },
 
   ["Revive"]                  = { key = m2.."L" },
+
+  -- Restoration, but also available as T45 in Balance, Feral & Guardian!
+  ["Swiftmend"]               = { key = "R" },
+  ["Wild Growth"]             = { key = m1.."F" },
+  ["Rejuvenation"]            = { key = m2.."C" },
 }
 
 Binder.druid["feral macros"] = {
@@ -144,13 +148,14 @@ Binder.druid["feral keybinds"] = {
 }
 
 Binder.druid["restoration keybinds"] = {
-  ["Swiftmend"]               = { key = "R" },
+  ["Lifebloom"]               = { key = "Q" },
   ["Cenarion Ward"]           = { key = m2.."R" },
   ["Nature's Cure"]           = { key = m2.."2" },
+  ["Ironbark"]                = { key = "" },
+  ["Tranquility"]             = { key = "H" },
 
   -- ["Nature's Swiftness"]      = { key = m2.."R" },
   -- ["Nature's Swiftness"]      = { key = m2.."E" },
-  ["Wild Growth"]             = { key = m1.."F" },
   ["Tree of Life"]            = { key = m2.."Q" },
 }
 

@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 11302
 ## Title: Binder
 ## Version 0.0.1
 ## Author: Drenos @ EU-Darkmoon Faire

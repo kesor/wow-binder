@@ -29,11 +29,11 @@ function Binder:LoadMacros()
       self:MapMacro(macro_name, macro_body)
     end
   end
-  if (self[self.class][self.talent .. ' macros']) then
-    for macro_name, macro_body in pairs(self[self.class][self.talent .. ' macros']) do
-      self:MapMacro(macro_name, macro_body)
-    end
-  end
+  -- if (self[self.class][self.talent .. ' macros']) then
+  --   for macro_name, macro_body in pairs(self[self.class][self.talent .. ' macros']) do
+  --     self:MapMacro(macro_name, macro_body)
+  --   end
+  -- end
 end
 
 function Binder:MapKey(key, action)
@@ -92,11 +92,11 @@ function Binder:LoadKeys()
     end
   end
   -- talent
-  if (self[self.class][self.talent .. ' keybinds']) then
-    for spell, attrs in pairs(self[self.class][self.talent .. ' keybinds']) do
-      self:MapKey(attrs['key'], spell)
-    end
-  end
+  -- if (self[self.class][self.talent .. ' keybinds']) then
+  --   for spell, attrs in pairs(self[self.class][self.talent .. ' keybinds']) do
+  --     self:MapKey(attrs['key'], spell)
+  --   end
+  -- end
 end
 
 function Binder:WhoAmI()
@@ -105,17 +105,17 @@ function Binder:WhoAmI()
   local _, class = UnitClass("player")
   self.class = string.lower(class)
 
-  self.talent = "no talent"
-  local talent_group = GetActiveSpecGroup(false)
-  local talent_tree = GetSpecialization(false, false, talent_group)
-  if talent_tree then
-    local _, name, description, icon = GetSpecializationInfo(talent_tree, false, false, nil, UnitSex("player"))
-    if name then
-      self.talent = string.lower(name)
-    end
-  end
+  -- self.talent = "no talent"
+  -- local talent_group = GetActiveSpecGroup(false)
+  -- local talent_tree = GetSpecialization(false, false, talent_group)
+  -- if talent_tree then
+  --   local _, name, description, icon = GetSpecializationInfo(talent_tree, false, false, nil, UnitSex("player"))
+  --   if name then
+  --     self.talent = string.lower(name)
+  --   end
+  -- end
 
-  return { self.race, self.class, self.talent }
+  return { self.race, self.class } -- , self.talent }
 end
 
 function Binder:init()
@@ -124,16 +124,17 @@ function Binder:init()
 
   self.widget = CreateFrame("Button", bframe, UIParent, "SecureActionButtonTemplate")
   self.eventframe:RegisterEvent("PLAYER_LEVEL_UP")
-  self.eventframe:RegisterEvent("PLAYER_TALENT_UPDATE") -- used instead of VARIABLES_LOADED
+  -- self.eventframe:RegisterEvent("PLAYER_TALENT_UPDATE") -- used instead of VARIABLES_LOADED
+  self.eventframe:RegisterEvent("VARIABLES_LOADED")
 
   self.eventframe:SetScript("OnEvent",
     function(x, event, ...)
-      local old_talent = self.talent
+      -- local old_talent = self.talent
       self:WhoAmI()
-      if (self.talent == old_talent and event == 'PLAYER_TALENT_UPDATE') then
-        return
-      end
-      local whoami = self.race .. ' ' .. self.class .. ' ' .. self.talent
+      -- if (self.talent == old_talent and event == 'PLAYER_TALENT_UPDATE') then
+      --   return
+      -- end
+      local whoami = self.race .. ' ' .. self.class  -- .. ' ' .. self.talent
       print("Loading Binder for " .. whoami)
       self:LoadMacros()
       self:LoadKeys()
@@ -146,6 +147,9 @@ end
 -- used by BinderLabels addon
 --
 function Binder:GetKeyForAction(action)
+  if not action then
+    return ""
+  end
   -- racial
   if (self.racial and self.racial[self.race] == action) then
     return self.m1.."Z"
@@ -153,19 +157,19 @@ function Binder:GetKeyForAction(action)
   -- class
   if (self[self.class] and self[self.class]['keybinds']) then
     for spell, attrs in pairs(self[self.class]['keybinds']) do
-      if (spell == action) then
+      if string.match(spell, action) then
         return attrs['key']
       end
     end
   end
   -- talent
-  if (self.talent and self[self.class][self.talent .. ' keybinds']) then
-    for spell, attrs in pairs(self[self.class][self.talent .. ' keybinds']) do
-      if (spell == action) then
-        return attrs['key']
-      end
-    end
-  end
+  -- if (self.talent and self[self.class][self.talent .. ' keybinds']) then
+  --   for spell, attrs in pairs(self[self.class][self.talent .. ' keybinds']) do
+  --     if (spell == action) then
+  --       return attrs['key']
+  --     end
+  --   end
+  -- end
   return ""
 end
 

@@ -3,6 +3,10 @@ local _, Binder = ...
 local S = Binder.SHIFT -- Modifier.lua
 local C  = Binder.CTRL  -- Modifier.lua
 
+--
+-- Based on https://docs.google.com/spreadsheets/d/1jGP_-gEdfoynDxe0Gx2RWvd33kAXV_T2bCENjKm_UVM
+--
+
 Binder.druid = {}
 
 Binder.druid["macros"] = {

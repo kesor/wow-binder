@@ -15,7 +15,7 @@ function Binder:MapMacro(macro_name, macro_body)
   -- later can be used in /click or a CLICK bind
   local bname = "b" .. string.gsub(macro_name, " ", "_")
   Binder.widget:SetAttribute("type-"..bname, "macro")
-  Binder.widget:SetAttribute("macrotext-"..bname, macro_body)
+  Binder.widget:SetAttribute("macrotext-"..bname, "/console Sound_EnableErrorSpeech 0\n"..macro_body.."\n/console Sound_EnableErrorSpeech 1")
 end
 
 function Binder:LoadMacros()

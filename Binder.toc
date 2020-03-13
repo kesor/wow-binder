@@ -3,7 +3,6 @@
 ## Version 0.0.1
 ## Author: Drenos @ EU-Darkmoon Faire
 Modifier.lua
-DeathKnight.lua
 Druid.lua
 Global.lua
 Hunter.lua
@@ -14,6 +13,4 @@ Rogue.lua
 Shaman.lua
 Warlock.lua
 Warrior.lua
-Monk.lua
-DemonHunter.lua
 Binder.lua

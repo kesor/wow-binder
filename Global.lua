@@ -25,28 +25,16 @@ Binder.global["macro_keybinds"] = {
   ["BANDAID"]        = { key = "J" },
   ["PVPTRINKET"]     = { key = "G" },
   ["Healthstone"]    = { key = m2.."W" },
+  ["Eternal Amulet of the Redeemed"] = { key = m2.."W" },
 }
 
 Binder.racial = {
-  ["gnome"]              = "Escape Artist",
   ["nightelf"]           = "Shadowmeld",
   ["orc"]                = "Blood Fury",
   ["dwarf"]              = "Stoneform",
   ["tauren"]             = "War Stomp",
   ["troll"]              = "Berserking",
-  ["draenei"]            = "Gift of the Naaru",
-  ["worgen"]             = "Darkflight",
-  ["scourge"]            = "Will of the Forsaken",
-  ["goblin"]             = "Rocket Jump",
   ["human"]              = "Every Man for Himself",
-  ["bloodelf"]           = "Arcane Torrent",
-  ["pandaren"]           = "Quaking Palm",
-  ["nightborne"]         = "Arcane Pulse",
-  ["highmountaintauren"] = "Bull Rush",
-  ["lightforgeddraenei"] = "Light's Judgment",
-  ["voidelf"]            = "Spatial Rift",
-  ["magharorc"]          = "Ancestral Call",
-  ["darkirondwarf"]      = "Fireblood"
 }
 
 -- all the possible options are here:

@@ -2,6 +2,8 @@ local _, Binder = ...
 
 local m1 = Binder.m1 -- Modifier.lua
 local m2 = Binder.m2 -- Modifier.lua
+local S = Binder.m1
+local C = Binder.m2
 
 Binder.rogue = {}
 
@@ -12,14 +14,19 @@ Binder.rogue["macros"] = {
   ["Ambush"]              = "#showtooltip Ambush\n/cast [nocombat,stance:0,nostealth] !Stealth\n/cast Ambush",
   ["Garrote"]             = "#showtooltip Garrote\n/cast [nocombat,stance:0,nostealth] !Stealth\n/cast Garrote",
   ["Sap"]                 = "#showtooltip Sap\n/cast [nocombat,stance:0,nostealth] !Stealth\n/cast Sap",
+
+  ["Sinister Strike"]     = "/startattack\n/cast Sinister Strike",
+  ["Eviscerate"]          = "/startattack\n/cast Eviscerate",
+  ["Throw"]               = "/startattack\n/cast Throw",
 }
 
 Binder.rogue["keybinds"] = {
   ["Kidney Shot"]         = { key = "`" },
   ["Sinister Strike"]     = { key = "1" },
+  ["Backstab"]            = { key = "2" },
   ["Ambush"]              = { key = "3" },
   ["Envenom"]             = { key = "4" },
-  ["Deadly Throw"]        = { key = "5" },
+  ["Throw"]               = { key = "5" },
   ["Distract"]            = { key = "6" },
   ["Sprint"]              = { key = "C" },
   ["Kick"]                = { key = "E" },
@@ -31,31 +38,30 @@ Binder.rogue["keybinds"] = {
   ["Recuperate"]          = { key = "V" },
   ["Tricks of the Trade"] = { key = "X" },
   ["Shiv"]                = { key = "Z" },
-  ["Feint"]               = { key = m1.."4" },
-  ["PoisonMacro3"]        = { key = m1.."A" },
-  ["PoisonMacro2"]        = { key = m1.."C" },
-  ["Sap"]                 = { key = m1.."E" },
-  ["Stealth"]             = { key = m1.."Q" },
-  ["PoisonMacro1"]        = { key = m1.."T" },
-  ["Pick Pocket"]         = { key = m1.."W" },
-  ["Garrote"]             = { key = m2.."2" },
-  ["Fan of Knives"]       = { key = m2.."4" },
-  ["Redirect"]            = { key = m2.."A" },
-  ["Cloak of Shadows"]    = { key = m2.."C" },
-  ["Expose Armor"]        = { key = m2.."D" },
-  ["Eviscerate"]          = { key = m2.."E" },
-  ["Smoke Bomb"]          = { key = m2.."F" },
-  ["Disarm Trap"]         = { key = m2.."H" },
-  ["Gouge"]               = { key = m2.."R" },
-  ["Rupture"]             = { key = m2.."S" },
-  ["Slice and Dice"]      = { key = m2.."V" },
-  ["Combat Readiness"]    = { key = m2.."X" },
-  ["Evasion"]             = { key = m2.."Z" },
+  ["Feint"]               = { key = S.."4" },
+  ["PoisonMacro3"]        = { key = S.."A" },
+  ["PoisonMacro2"]        = { key = S.."C" },
+  ["Sap"]                 = { key = S.."E" },
+  ["Stealth"]             = { key = S.."Q" },
+  ["PoisonMacro1"]        = { key = S.."T" },
+  ["Pick Pocket"]         = { key = S.."W" },
+  ["Garrote"]             = { key = C.."2" },
+  ["Fan of Knives"]       = { key = C.."4" },
+  ["Redirect"]            = { key = C.."A" },
+  ["Cloak of Shadows"]    = { key = C.."C" },
+  ["Expose Armor"]        = { key = C.."D" },
+  ["Eviscerate"]          = { key = C.."E" },
+  ["Smoke Bomb"]          = { key = C.."F" },
+  ["Disarm Trap"]         = { key = C.."H" },
+  ["Gouge"]               = { key = C.."R" },
+  ["Rupture"]             = { key = C.."S" },
+  ["Slice and Dice"]      = { key = C.."V" },
+  ["Combat Readiness"]    = { key = C.."X" },
+  ["Evasion"]             = { key = C.."Z" },
 }
 
 Binder.rogue["subtlety keybinds"] = {
   ["Hemorrhage"]          = { key = "1" },
-  ["Backstab"]            = { key = "2" },
   ["Shadowstep"]          = { key = m1.."F" },
   ["Preparation"]         = { key = m2.."3" },
   ["Premeditation"]       = { key = m2.."G" },

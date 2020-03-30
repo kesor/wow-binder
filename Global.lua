@@ -24,8 +24,8 @@ Binder.global["macro_keybinds"] = {
   ["MOUNT"]          = { key = "Y" },
   ["BANDAID"]        = { key = "J" },
   ["PVPTRINKET"]     = { key = "G" },
-  ["Healthstone"]    = { key = m2.."W" },
-  ["Eternal Amulet of the Redeemed"] = { key = m2.."W" },
+  -- ["Healthstone"]    = { key = m2.."W" },
+  -- ["Eternal Amulet of the Redeemed"] = { key = m2.."W" },
 }
 
 Binder.racial = {
@@ -57,7 +57,7 @@ Binder.global["keybinds"] = {
   ["CTRL-MOUSEWHEELDOWN"]  = "TSMMacro",
   --
   ["W"]                    = "MOVEFORWARD",
-  ["S"]                    = "NONE",
+  ["S"]                    = "NONE", -- never backpeddle
   ["ALT-S"]                = "MOVEBACKWARD",
   ["A"]                    = "STRAFELEFT",
   ["D"]                    = "STRAFERIGHT",
@@ -77,6 +77,19 @@ Binder.global["keybinds"] = {
   -- [m1.."V"]                = "ALLNAMEPLATES",
   -- [m2.."V"]                = "NAMEPLATES",
   -- [m1..m2.."V"]            = "FRIENDNAMEPLATES",
+
+  -- Disable useful keys for spells from default binds
+  -- https://www.wowhead.com/guide=875/the-art-of-effective-keybinding
+  ["Z"]                    = "NONE", -- no need for sheath weapon
+  ["X"]                    = "NONE", -- no need for fly/swim down
+  ["C"]                    = "NONE", -- no need for character pane
+  ["V"]                    = "NONE", -- no need for nameplate changes
+  ["R"]                    = "NONE", -- no need for whisper replies
+  -- ["T"]                    = "NONE", -- no need for whatever
+  ["F"]                    = "NONE", -- no need for assist target
+  ["G"]                    = "NONE", -- no need for whatever
+  ["MOUSEWHEELUP"]         = "NONE", -- no need for whatever
+  ["MOUSEWHEELDOWN"]       = "NONE", -- no need for whatever
 }
 
 Binder.global["modclicks"] = {

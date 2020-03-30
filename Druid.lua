@@ -53,9 +53,9 @@ Binder.druid["macros"] = {
 
   -- Stance Combo
   ["Swiftmend-Feral Charge-Tiger's Fury"] = "/cast [nostance,help,nodead][help][@player][] Swiftmend\n/cast [stance:1,harm,nodead][stance:1,@targettarget,harm,nodead][stance:1] Feral Charge\n/cast [stance:3,harm,nodead][stance:3,@targettarget,harm,nodead][stance:3] Tiger's Fury",
-  ["Nature's Swiftness-Maul"] = "/cast [nostance] Nature's Swiftness\n/cast [stance:1,harm,nodead][stance:1] Maul",
+  ["Nature's Swiftness-Maul"] = "/cast [nostance] Nature's Swiftness\n/startattack [stance:1,harm,nodead][stance:1]\n/cast [stance:1,harm,nodead][stance:1] Maul",
   ["Prowl-Pounce"]          = "/cancelform [nostance:3]\n/cast [nostance:3] !Cat Form\n/cast [stance:3,nostealth] !Prowl\n/cast [stance:3,stealth] Pounce",
-  ["Travel Form"]           = "/cancelform [swimming,noform:2][outdoors,noform:2/4]\n/cast [swimming] Aquatic Form; [outdoors] TravelForm; Cat Form",
+  ["Travel Form"]           = "/cancelform [swimming,noform:2][outdoors,noform:2/4]\n/cast [swimming] Aquatic Form; [outdoors] Travel Form; Cat Form",
   ["Bear Form"]             = "/cast Bear Form; Dire Bear Form",
   ["Cat Form"]              = "/cast Cat Form",
 
@@ -69,6 +69,7 @@ Binder.druid["macros"] = {
   ["Faerie Fire"]           = "/cast [nostance] Faerie Fire\n/cast [stance:1/3] Faerie Fire (Feral)",
 
   -- Taunt & Aggro
+  ["Growl"]                 = "/startattack\n/cast [stance:1] Growl",
   ["Challenging Roar"]      = "/cast [stance:1] Challenging Roar",
   ["Cower"]                 = "/cast [stance:3] Cower",
 }

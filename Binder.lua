@@ -126,6 +126,10 @@ function Binder:init()
   self.eventframe:RegisterEvent("PLAYER_LEVEL_UP")
   self.eventframe:RegisterEvent("PLAYER_TALENT_UPDATE") -- used instead of VARIABLES_LOADED
 
+  -- The secure-button-frame must be registered to receive clicks, or it does
+  -- not work at all.
+  self.widget:RegisterForClicks("Button5Down")
+
   self.eventframe:SetScript("OnEvent",
     function(x, event, ...)
       local old_talent = self.talent
